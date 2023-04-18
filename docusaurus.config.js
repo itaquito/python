@@ -87,33 +87,33 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Otras páginas interesantes",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Página oficial de Python",
+                href: "https://www.python.org/"
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
+                label: "El Libro De Python",
+                href: "https://ellibrodepython.com/"
+              }
             ],
           },
           {
-            title: "More",
+            title: "Descargas",
             items: [
               {
-                label: "Contribuye en GitHub",
-                href: "https://github.com/itaquito/python",
+                label: "Descarga Python",
+                href: "https://www.python.org/downloads/"
               },
+              {
+                label: "Descarga Anaconda",
+                href: "https://www.anaconda.com/products/distribution"
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Python es creado por la Python Software Foundation y no tiene afilicación con esta página. Construido con Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
