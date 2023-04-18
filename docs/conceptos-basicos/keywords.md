@@ -9,7 +9,7 @@ Aquellas palabras reservadas del lenguaje, y las cuales no se deben de ocupar pa
 
 ## ✏️ Ejemplos
 
-```python title="Ejemplos de las palabras reservadas"
+```python title="Ejemplo de una palabra reservada"
 # Uso de "def"
 def unaFuncion():
   print("¡Hola!")
