@@ -65,7 +65,12 @@ const config = {
             type: "docSidebar",
             sidebarId: "mySidebar",
             position: "left",
-            label: "Empezar",
+            label: "Introducción",
+          },
+          {
+            label: "Conceptos básicos",
+            position: "left",
+            to: "/category/conceptos-basicos",
           },
           {
             href: "https://github.com/itaquito/python",
@@ -81,8 +86,12 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Empezar",
+                label: "Introducción",
                 to: "/intro",
+              },
+              {
+                label: "Conceptos básicos",
+                to: "/category/conceptos-basicos",
               },
             ],
           },
