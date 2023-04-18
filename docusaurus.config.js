@@ -73,6 +73,11 @@ const config = {
             to: "/category/conceptos-basicos",
           },
           {
+            label: "Programación orientada a objetos",
+            position: "left",
+            to: "/category/programacion-orientada-a-objetos",
+          },
+          {
             href: "https://github.com/itaquito/python",
             label: "GitHub",
             position: "right",
