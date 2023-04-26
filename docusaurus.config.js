@@ -73,6 +73,11 @@ const config = {
             to: "/category/conceptos-basicos",
           },
           {
+            label: "Conceptos avanzados",
+            position: "left",
+            to: "/category/conceptos-avanzados",
+          },
+          {
             label: "Programación orientada a objetos",
             position: "left",
             to: "/category/programacion-orientada-a-objetos",
@@ -88,7 +93,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Secciones",
             items: [
               {
                 label: "Introducción",
@@ -97,6 +102,14 @@ const config = {
               {
                 label: "Conceptos básicos",
                 to: "/category/conceptos-basicos",
+              },
+              {
+                label: "Conceptos avanzados",
+                to: "/category/conceptos-avanzados",
+              },
+              {
+                label: "Programación orientada a objetos",
+                to: "/category/programacion-orientada-a-objetos",
               },
             ],
           },
@@ -110,6 +123,14 @@ const config = {
               {
                 label: "El Libro De Python",
                 href: "https://ellibrodepython.com/"
+              },
+              {
+                label: "Contribuyentes de esta página",
+                href: "https://github.com/itaquito/python/graphs/contributors"
+              },
+              {
+                label: "Código fuente de Python",
+                href: "https://github.com/python/cpython"
               }
             ],
           },
