@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Keywords"
+sidebar_label: "🔑 Keywords"
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Operadores"
+sidebar_label: "🧮 Operadores"
 sidebar_position: 3
 ---
 

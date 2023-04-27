@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Slicing"
+sidebar_label: "✂️ Slicing"
 sidebar_position: 7
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Funciones lambda"
+sidebar_label: "📂 Funciones lambda"
 sidebar_position: 1
 ---
 

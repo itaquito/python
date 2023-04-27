@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Manejo de excepciones"
+sidebar_label: "⚠️ Manejo de excepciones"
 sidebar_position: 5
 ---
 

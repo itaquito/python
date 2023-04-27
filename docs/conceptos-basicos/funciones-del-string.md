@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Funciones del string"
+sidebar_label: "🛠️ Funciones del string"
 sidebar_position: 5
 ---
 

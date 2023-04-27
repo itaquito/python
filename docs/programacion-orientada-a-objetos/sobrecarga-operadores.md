@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Sobrecarga de operadores"
+sidebar_label: "🔋 Sobrecarga de operadores"
 sidebar_position: 5
 ---
 

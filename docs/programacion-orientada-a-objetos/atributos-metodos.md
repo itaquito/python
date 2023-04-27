@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Atributos y métodos"
+sidebar_label: "🎨 Atributos y ⚙️ métodos"
 sidebar_position: 3
 ---
 

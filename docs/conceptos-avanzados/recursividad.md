@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Recursividad"
+sidebar_label: "🔄 Recursividad"
 sidebar_position: 3
 ---
 

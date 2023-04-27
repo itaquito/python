@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Funciones"
+sidebar_label: "🚩 Funciones"
 sidebar_position: 14
 ---
 

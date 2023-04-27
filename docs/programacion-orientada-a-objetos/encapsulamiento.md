@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Encapsulamiento"
+sidebar_label: "💊 Encapsulamiento"
 sidebar_position: 6
 ---
 

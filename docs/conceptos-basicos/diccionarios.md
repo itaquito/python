@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Diccionarios"
+sidebar_label: "🗃️ Diccionarios"
 sidebar_position: 18
 ---
 

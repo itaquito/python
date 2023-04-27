@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Objetos"
+sidebar_label: "🛸 Objetos"
 sidebar_position: 4
 ---
 

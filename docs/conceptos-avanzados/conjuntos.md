@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Conjuntos o sets"
+sidebar_label: "🗄️ Conjuntos o sets"
 sidebar_position: 2
 ---
 

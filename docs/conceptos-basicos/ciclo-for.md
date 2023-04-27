@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Ciclo for"
+sidebar_label: "🔄 Ciclo for"
 sidebar_position: 12
 ---
 

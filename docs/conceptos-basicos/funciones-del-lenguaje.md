@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Funciones del lenguaje"
+sidebar_label: "🛠️ Funciones del lenguaje"
 sidebar_position: 4
 ---
 

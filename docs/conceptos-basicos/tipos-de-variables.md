@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Tipos de variables"
+sidebar_label: "📎 Tipos de variables"
 sidebar_position: 1
 ---
 

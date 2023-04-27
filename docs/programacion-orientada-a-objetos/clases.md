@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Clases"
+sidebar_label: "🚗 Clases"
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Alcance de variables"
+sidebar_label: "🚀 Alcance de variables"
 sidebar_position: 6
 ---
 
