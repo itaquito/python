@@ -5,46 +5,35 @@ sidebar_position: 2
 
 # 🚗 Clases
 
-Una clase es una plantilla (digamos un molde) a partir del cual se pueden crear objetos de datos con base en un determinado modelo. Cabe destacar que se pueden definir tantas clases como se deseen.
+Una clase es una plantilla (digamos un molde), con este molde podremos crear los objetos que querramos. Por ejemplo, la clase `Gato` puede generar a diferentes gatos: `Hash`, `Pelusa`, `Rodolfo`; a cada uno de estos gatos u objetos les denominamos como una **instancia de nuestra clase**. Cabe destacar que se pueden definir tantas clases como se deseen y de ellas generar los objetos que querramos.
 
 En Python, las clases se nombran bajo la convención de UpperCamelCase, en donde la primera letra de cada palabra se escribe en mayúscula. En todo momento se debe procurar que los nombres no sean tan generales.
 
 ## ✏️ Ejemplo
 
 ```python title="Ejemplo de cómo definir una clase"
-class OsoPardo:
-
-color = "café"
-
-  def comer():
-    print("El oso ha comido!")
-```
-
-## Atributos y métodos
-
-```python title="Ejemplo de atributos y clases"
-class OsoPardo:
-		
-  # Atributo
-  color = "café"
-
-  # Método
-  def comer():
-    print("El oso ha comido!")
-```
-
-Como se puede observar, las clases presentan dentro de sus elementos con atributos y métodos. Los primeros refieren a características mientras los segundos refieren a las funcionalidades que pueden tener los diversos objetos.
-
-```python title="Otro ejemplo de atributos y clases"
 class Gato:
+  pass # Aquí irán nuestors métodos y atributos, pero por ahora lo dejaremos vacío.
 
-  # Atributo de clase
-  especie = “mamífero”
-
-  # Atributos de instancia
-  def __init__(self, raza, color):
-    self.raza = raza
-    self.color = color
+unGato = Gato() # unGato es una instancia de nuestra clase Gato. 
 ```
 
-En este caso se pueden observar que existen estos dos tipos de atributos. En el primer caso tenemos un atributo que aplicaría por igual a todos los objetos que deriven de dicha clase. Mientras que en el segundo caso tenemos atributos cuyas definiciones pueden variar según el objeto. Para ello podemos llegar a hacer uso del método iniciador `__init__` (el cual se llama solo).
+## Métodos iniciador y destructor
+
+Las clases pueden tener un método iniciador (o constructor en otros lenguajes de programación) y un método destructor. Estos métodos (o funciones) se ejectuaran durante el ciclo de vida de cada una de las instancias de dicha clase. El método iniciador se ejecuta cuando se crea una nueva instancia y el método destructor cuando se elimina la instancia
+
+```python title="Ejemplo de los métodos iniciador y destructor"
+class Gato:
+		
+  # Método iniciador
+  def __init__(self):
+    print("Se creó un nuevo gato")
+  
+  ## Método destructor
+  def __del__(self):
+    print("Se eliminó un gato :c")
+
+unGato = Gato() # Al ejecutar esta linea de código se ejecutará el método iniciador, imprimiendo el texto "Se creó un nuevo gato".
+
+del unGato # Al ejecutar esta linea de código se ejecutará el método destructor, imprimiendo el texto "Se eliminó un gato :c".
+```
