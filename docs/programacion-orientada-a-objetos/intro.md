@@ -19,7 +19,7 @@ La Programación Orientada a Objetos (POO) es un paradigma de programación que 
 
 ### 🎉 Pilares de la programación orientada a objetos
 
-* **Abstracción**: Una clase puede representar un objeto normal con propiedades y características en específico. Este pilar nos permite enforcarnos en lo esencial que define cada objeto, para que nuestra clase sólo incluya estas propiedades y excluya las demás.
+* **Abstracción**: Consiste en aislar un elemento de su contexto o del resto de los elementos que lo acompañan. Es decir, podemos tener una clase padre con un **método abstracto** sin funcionalidad para que después sea **sobreescrito** por un método con el mismo nombre en la clase hija.
 
 * **Encapsulamiento**: Una clase tiene métodos y atributos que la definen. El encapsulamiento nos permite negar el acceso a ellos, para que no puedan ser modificados o sólo puedan ser modificados bajo ciertas reglas que nosotros establezcamos. 
 
