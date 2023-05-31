@@ -1,11 +1,13 @@
 ---
 sidebar_label: "🧁 Composición"
-sidebar_position: 7
+sidebar_position: 3
 ---
 
 # 🧁 Composición
 
-Dentro del método iniciador podemos guardar en los atributos nuevas instancias de otras clases. Por ejemplo, un clase `Humano` puede componerse de otras clases como `Cerebro`, `Corazon` y `Piernas`. O una clase `Empleado` puede componerse de una clase `Salario`. 
+Dentro del método iniciador podemos guardar en los atributos nuevas instancias de otras clases. Por ejemplo, un clase `Humano` puede componerse de otras clases como `Cerebro`, `Corazon` y `Piernas`. O una clase `Empleado` puede componerse de una clase `Salario`.
+
+A diferencia de la agregación, la clase que compone a otra clase depende de esta, es decir, una clase `Corazon` no puede existir sin la clase `Humano`.
 
 ## ✏️ Ejemplos
 
