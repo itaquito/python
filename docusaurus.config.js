@@ -115,6 +115,10 @@ const config = {
                 label: 'Programación orientada a objetos',
                 to: '/category/programacion-orientada-a-objetos',
               },
+              {
+                label: 'NumPy',
+                to: '/category/numpy',
+              },
             ],
           },
           {
