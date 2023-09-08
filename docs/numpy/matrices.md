@@ -37,7 +37,7 @@ Las Matrices Cuadradas son aquelllas que tienen el mismo número de filas que de
 ![Matriz cuadrada](/img//numpy/matrices/cuadrada.jpg)
 
 
-### 4️⃣  Matriz rectangular  //encontrar otra imagen para que no se vea tan fea
+### 4️⃣  Matriz rectangular
 Las matrices rectangulares son aquellas que tienen diferente número de filas que de columnas. **(n!=m)** Por ejemplo:
 
 ![Matriz cuadrada](/img//numpy/matrices/rectangular.png)
@@ -77,13 +77,5 @@ La Matriz Traspuesta de cualquier matriz es aquella que se obtiene al cambiar la
 ![Matriz traspuesta](/img//numpy/matrices/traspuesta.jpg)
 
 
-
-
-
-
-
-
- 
-
-
-
+### 🔟 Matriz escalar
+Todos los elementos de la diagonal principal son iguales, los demás cero. Por ejemplo:
