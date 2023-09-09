@@ -100,11 +100,11 @@ En la siguiente imagen se muestran los dos tipos de matrices triangulares:
 
 ![Matriz triangular](/img//numpy/matrices/triangular.jpg)
 
-### 9️⃣ Matriz traspuesta
-La Matriz Traspuesta de cualquier matriz es aquella que se obtiene al cambiar las filas por las columnas de una matriz. Por ejemplo:
+### 9️⃣ Matriz transpuesta
+La Matriz Transpuesta de cualquier matriz es aquella que se obtiene al cambiar las filas por las columnas de una matriz. Por ejemplo:
 
 
-```python title="Creación de una matriz Traspuesta en python"
+```python title="Creación de una matriz Transpuesta en python"
 import numpy as np
 matriz = np.array([1,2,3],[4,5,6],[7,8,9])#Creación matriz (3x3)
 Hay dos formas de trasponer la matriz:
@@ -114,4 +114,4 @@ matrizTraspuesta=matriz.transpose() #Creación matriz traspuesta (3x3)
 ```
 
 
-### **Hay mas tipos de matrices, pero esto no es curso de Algebra Lineal. 😅**
+**Hay mas tipos de matrices, pero esto no es curso de Algebra Lineal. 😅**
