@@ -23,7 +23,7 @@ matriz1=np.random.random((3,3))
 
 
 #### 1️⃣ Método .max()
-Este metodo nos permite encontrar el valor maximo de una matriz.
+Este método nos permite encontrar el valor máximo de una matriz.
 
 
 ```python title="Encontrar el valor maximo de una matriz"
@@ -34,7 +34,7 @@ matriz.max()
 
 
 #### 2️⃣ Método .min()
-Este metodo nos permite encontrar el valor minimo de una matriz.
+Este método nos permite encontrar el valor mínimo de una matriz.
 
 
 ```python title="Encontrar el valor minimo de una matriz"
@@ -45,7 +45,7 @@ matriz.min()
 
 
 #### 3️⃣ Método .shape
-Este metodo nos permite encontrar el las dimensiones(Número de columnas y de filas) de una matriz.
+Este atributo de la clase de las matrices nos permite encontrar el las dimensiones(Número de columnas y de filas) de una matriz.
 
 
 ```python title="Encontrar las dimensiones de una matriz"
@@ -121,6 +121,16 @@ np.where(matriz>5)
 #Aqui estamos encontrando los indices de los elementos de la matriz que sean mayores a 5
 ```
 
+Tambien podemos usar otra forma, la cual nos regresa los elementos de la matriz que cumplan la condición.
+
+
+```python title="Encontrar los elementos de una matriz que cumplan una condición"
+import numpy as np
+matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
+matriz[matriz>5]
+#Aqui estamos encontrando los elementos de la matriz que sean mayores a 5
+```
+
 ### 🤔 Conceptos basicos de matrices
 Una matriz se compone por filas y columnas, las cuales se pueden representar de la siguiente manera:
 n: Número de filas, m: Número de columnas. 
@@ -171,11 +181,11 @@ matriz = np.array([1,2,3],[4,5,6])
 ### 5️⃣ Matriz diagonal
 Las Matrices Diagonales son aquellas que tienen todos sus elementos fuera de la diagonal principal iguales a cero. Por ejemplo:
 
-![Matriz identidad](/img//numpy/matrices/diagonal.jpg)
+![Matriz diagonal](/img//numpy/matrices/diagonal.jpg)
 
 
 
-### 6️⃣ Matriz Unidad(Identidad)
+### 6️⃣ Matriz Unidad (identidad)
 La Matriz Identidad es una matriz cuadrada que tiene todos sus elementos de la diagonal principal iguales a 1 y los demás elementos iguales a cero. Por ejemplo:
 
 ```python title="Creación de una matriz identidad(3x3) en python"
@@ -183,9 +193,9 @@ import numpy as np
 matriz = np.identity([1,2,3],[4,5,6],[7,8,9]) #Creación matriz identidad (3x3)
 matriz1= np.eye(3) #Creación matriz identidad (3x3)
 ```
-x
-### ☝🏽️ Matrices Triangulares
-Las Matrices Triangulares son aquellas que tienen todos sus elementos por encima o por debajo de la diagonal principal iguales a cero. Existen dos tipos de Matrices Triangulares: Matriz Triangular Superior y Matriz Triangular Inferior.
+
+### ☝🏽️ Matrices triangulares
+Las Matrices triangulares son aquellas que tienen todos sus elementos por encima o por debajo de la diagonal principal iguales a cero. Existen dos tipos de Matrices triangulares: Matriz Triangular Superior y Matriz Triangular Inferior.
 
 #### 7️⃣ Matriz triangular superior
 La Matriz Triangular Superior es aquella que tiene todos sus elementos por debajo de la diagonal principal iguales a cero.
@@ -198,13 +208,13 @@ La Matriz Triangular Inferior es aquella que tiene todos sus elementos por encim
 En la siguiente imagen se muestran los dos tipos de matrices triangulares:
 
 
-![Matriz triangular](/img//numpy/matrices/triangular.jpg)
+![Matriz triangular] (/img/numpy/matrices/triangular.jpg)
 
 ### 9️⃣ Matriz transpuesta
-La Matriz Transpuesta de cualquier matriz es aquella que se obtiene al cambiar las filas por las columnas de una matriz. Por ejemplo:
+La Matriz transpuesta de cualquier matriz es aquella que se obtiene al cambiar las filas por las columnas de una matriz. Por ejemplo:
 
 
-```python title="Creación de una matriz Transpuesta en python"
+```python title="Creación de una matriz transpuesta en python"
 import numpy as np
 matriz = np.array([1,2,3],[4,5,6],[7,8,9])#Creación matriz (3x3)
 Hay dos formas de trasponer la matriz:
@@ -214,4 +224,4 @@ matrizTraspuesta=matriz.transpose() #Creación matriz traspuesta (3x3)
 ```
 
 
-**Hay mas tipos de matrices, pero esto no es curso de Algebra Lineal. 😅**
+**Hay mas tipos de matrices, pero esto no es curso de Álgebra Lineal. 😅**
