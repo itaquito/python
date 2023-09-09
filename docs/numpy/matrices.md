@@ -19,7 +19,107 @@ tambien podemos usar
 matriz1=np.random.random((3,3)) 
 #Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son números aleatorios entre 0 y 1
 ```
+### 🛠️ Algunos métodos de matrices con numpy
 
+
+#### 1️⃣ Método .max()
+Este metodo nos permite encontrar el valor maximo de una matriz.
+
+
+```python title="Encontrar el valor maximo de una matriz"
+import numpy as np
+matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
+matriz.max()
+```
+
+
+#### 2️⃣ Método .min()
+Este metodo nos permite encontrar el valor minimo de una matriz.
+
+
+```python title="Encontrar el valor minimo de una matriz"
+import numpy as np
+matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
+matriz.min()
+```
+
+
+#### 3️⃣ Método .shape
+Este metodo nos permite encontrar el las dimensiones(Número de columnas y de filas) de una matriz.
+
+
+```python title="Encontrar las dimensiones de una matriz"
+import numpy as np
+matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
+matriz.shape
+```
+
+
+#### 4️⃣ Método .zeros()
+Este método nos permite crear una matriz de ceros. Tenemos que especificar las dimensiones de la matriz.
+
+
+```python title="Crear una matriz de ceros"
+import numpy as np
+matriz = np.zeros((3,3))
+#Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son ceros
+```
+
+
+#### 5️⃣ Método .ones()
+Este método es parecido al anterior, pero en vez de crear una matriz de ceros, crea una matriz de unos.
+
+
+```python title="Crear una matriz de unos"
+import numpy as np
+matriz = np.ones((3,3))
+#Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son unos
+```
+
+
+#### 6️⃣ Método random.random()
+Este método nos permite crear una matriz de números aleatorios entre 0 y 1. Tenemos que especificar las dimensiones de la matriz.
+
+
+```python title="Crear una matriz de números aleatorios entre 0 y 1"
+import numpy as np
+matriz = np.random.random((3,3))
+#Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son números aleatorios entre 0 y 1
+```
+
+
+#### 7️⃣ Método .random.randint()
+Este método nos permite crear una matriz de números aleatorios entre 0 y otro número entero. Tenemos que especificar las dimensiones de la matriz.
+
+
+```python title="Crear una matriz de números aleatorios entre 0 y otro número entero"
+import numpy as np
+matriz = np.random.randint(10, size=(3,3))
+#Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son números aleatorios entre 0 y 10
+```
+
+
+#### 8️⃣ Método .random.seed()
+Para entender este metodo tenemos que entender que en la programación no hay una aleatoriedad completa, sino más bien es una pseudo aleatoriedad, y por ello la semilla se utiliza para plantear el patrón de aleatoriedad. Y este método que sirve para inicializar una serie de números supuestamente aleatorios, mismo que puede llegarse a ocupar en matrices.
+
+
+```python title="Crear una matriz de números "aleatorios" con semilla
+import numpy as np
+np.random.seed(123)
+matriz = np.random.randint(10, size=(3,3))
+#Aqui estamos creando una matriz de 3x3, esto lo especificamos en el parentesis, especificamos cuantas columnas y filas queremos respectivamente. Los componentes de la matriz son números aleatorios entre 0 y 10
+```
+
+#### 9️⃣ Método .where()
+El método where() nos permite encontrar los indices de los elementos de una matriz que cumplan una condición. Por ejemplo:
+
+
+```python title="Encontrar los indices de los elementos de una matriz que cumplan una condición"
+import numpy as np
+matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
+np.where(matriz>5)
+#Aqui estamos encontrando los indices de los elementos de la matriz que sean mayores a 5
+```
 
 ### 🤔 Conceptos basicos de matrices
 Una matriz se compone por filas y columnas, las cuales se pueden representar de la siguiente manera:

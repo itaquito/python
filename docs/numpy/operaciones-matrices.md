@@ -48,7 +48,7 @@ print(k/A)
 ```
 
 
-### ☝🏽️ Potencia de una matriz
+### ☝🏽️ Potencias de una matrices
 Sea una matriz **A** de tamaño **nXm** y un escalar **k** que pertenece a los números R (reales), la potencia de una matriz se define como:
 La potencia de cada número de la matriz por el escalar **k**.
 
@@ -60,7 +60,7 @@ A = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(A**k)
 ```
 #### Raiz cuadrada de una matriz
-Podemos sacar la raiz cuadrada de la matriz elevando la matriz a 1/2. Ejemplo:
+Podemos sacar la raiz cuadrada de la matriz usando potencias, elevando la matriz a 1/2. Ejemplo:
 
 
 ```python title="Raiz cuadrada de una matriz"
