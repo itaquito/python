@@ -7,6 +7,7 @@ sidebar_position: 3
 En numpy podemos realizar operaciones con matrices, estas operaciones pueden ser entre matrices y escalares o entre matrices y matrices.
 A continuación se presentan las operaciones que se pueden realizar con matrices.
 
+
 ## 📝 Operaciones Matrices-Escalares
 
 ### ✖ Multiplicación de una matriz por un escalar
