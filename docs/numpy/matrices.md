@@ -45,7 +45,7 @@ matriz.min()
 
 
 #### 3️⃣ Método .shape
-Este atributo de la clase de las matrices nos permite encontrar el las dimensiones(Número de columnas y de filas) de una matriz.
+Este atributo de la clase de las matrices nos permite encontrar el las dimensiones (número de columnas y de filas) de una matriz.
 
 
 ```python title="Encontrar las dimensiones de una matriz"
@@ -111,7 +111,7 @@ matriz = np.random.randint(10, size=(3,3))
 ```
 
 #### 9️⃣ Método .where()
-El método where() nos permite encontrar los indices de los elementos de una matriz que cumplan una condición. Por ejemplo:
+El método where() nos permite encontrar los índices de los elementos de una matriz que cumplan una condición. Por ejemplo:
 
 
 ```python title="Encontrar los indices de los elementos de una matriz que cumplan una condición"
