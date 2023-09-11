@@ -90,7 +90,7 @@ Ahora bien que sabemos lo que es una imágen y cómo es que esta se comporta, mo
 
 1. Como primer instancia importamos la biblioteca OpenSV con el seudonombre `cv` y Matplotlib como `plt`:
 
-```python title="Importar OpenCV"
+```python title="Importar OpenCV y Matplotlib"
 import cv2 as cv
 import matplotlib.pyplot as plt
 ```
@@ -133,7 +133,7 @@ Ahora si quisiéramos crear una imágen desde 0, de color negro se podría reali
 
 1. Como primer instancia importamos la biblioteca OpenSV con el seudonombre `cv` y Matplotlib como `plt`:
 
-```python title="Importar OpenCV"
+```python title="Importar OpenCV y Matplotlib"
 import cv2 as cv
 import matplotlib.pyplot as plt
 ```
