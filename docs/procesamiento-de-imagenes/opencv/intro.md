@@ -11,7 +11,7 @@ OpenCV-Python es una biblioteca de enlaces de Python diseñada para resolver pro
 
 ## 🔧 Métodos de OpenCV
 
-## .imread()
+### .imread()
 
 Posiblemente el método más fundamental de OpenCV. Sirve para leer una imagen y poder guardarla en una variable para posteriormente manipularla.
 
@@ -29,7 +29,7 @@ El argumento de `cv.imread()` cambiará dependiendo de en dónde esté tu imagen
 
 Sirve para cambiar el formato del color que tiene una imagen por el que se desee.
 
-```python title="Ejemplo de la abstracción de una clase"
+```python title="Ejemplo de cómo cambiar el formato de una imagen de BGR a RGB"
   imagen = cv.cvtColor(imagen, cv.COLOR_BGR2RGB)
 ```
 
@@ -38,3 +38,11 @@ Sirve para cambiar el formato del color que tiene una imagen por el que se desee
 OpenCV cuenta con múltiples constantes para este método y algunos otros, en el ejemplo anterior utilizamos la constante `cv.COLOR_BGR2RGB`. Puedes identificar las constantes porque siempre estarán en MAYÚSCULAS. Si usas VSCode, los podrás ver en el autocompletado cuando escribes `cv.`.
 
 :::
+
+### .imwrite()
+
+Nos permite guardar nuestra imagen con el nombre y el tipo de archivo de nuestra elección una vez hayamos terminado de modificarla.
+
+```python title="Ejemplo de cómo guardar una imagen en nuestro disco"
+  cv.imwrite("nombre_de_imagen.jpg", imagen)
+```
