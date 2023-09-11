@@ -8,7 +8,7 @@ sidebar_position: 2
 ## ✏️ Definición De Matrices 
  Una matriz es un arreglo bidimensional de números, símbolos o elementos dispuestos en filas y columnas. Cada elemento en una matriz se encuentra ubicado en una posición específica definida por su fila y columna. Las matrices se utilizan en diversas ramas de las matemáticas, la física, la informática y muchas otras disciplinas para representar y manipular datos de manera organizada y eficiente.
 
- ### ¿Como crear una matriz en pyhton?
+ ### ¿Como crear una matriz en python?
 Para crear una matriz en python se debe importar la libreria numpy y luego crear un arreglo de numpy con los datos de la matriz.
 
 ```python title="Creación de una matriz en python"
@@ -22,6 +22,23 @@ matriz1=np.random.random((3,3))
 ### 🛠️ Algunos métodos de matrices con numpy
 
 
+Las matrices que manejamos en NumPy, por ser justamente arreglos bidimensionales, cuentan con prácticamente las mismas funcionalidades de los arreglos convencionales. De esta forma es que, por ejemplo, podemos hacer uso de indexing para acceder a un determinado elemento (pudiendo ser éste un dato o inclusive una lista) y de slicing para poder extraer un rango de datos.
+
+
+```python title="Indexing y slicing en matrices"
+import numpy as np
+matrix = np.arange(15, dtype=np.int64).reshape((3,5))	
+        array([[ 0,  1,  2,  3,  4],
+       		   [ 5,  6,  7,  8,  9],
+       		   [10, 11, 12, 13, 14]], dtype=int64)
+matrix[1,3] # = matrix[1][3]
+	     8
+matrix[0, 1:3]
+	    array([1, 2], dtype=int32)
+```
+
+** Ahora si empecemos con los metodos de matrices **
+
 #### 1️⃣ Método .max()
 Este método nos permite encontrar el valor máximo de una matriz.
 
@@ -31,6 +48,34 @@ import numpy as np
 matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
 matriz.max()
 ```
+
+**☝🏽 Pero tambien lo podemos usar de otra manera.**
+
+
+Ya que este método permite el ingreso de otro argumento, y el cual vendría siendo un valor que define el eje de la matriz para el cual se van a obtener los valores máximos.
+
+
+```python title="Encontrar el valor maximo de una matriz con eje"
+import numpy as np
+x = np.arange(15, dtype=np.int64).reshape((3,5))
+	    array([[ 0,  1,  2,  3,  4],
+       		   [ 5,  6,  7,  8,  9],
+       		   [10, 11, 12, 13, 14]], dtype=int64)
+np.max(x, axis = 0)
+	    array([ 10, 11, 12, 13, 14])
+```
+
+
+Con el eje ‘0’ obtenemos de vuelta el número máximo por columnas. Mientras que con el eje ‘1’ obtenemos como resultado el número máximo por filas.
+
+
+```python title="Encontrar los valores maximos de una matriz por columnas y filas"
+import numpy as np
+np.max(x, axis = 1)
+        array([ 4, 9, 14])
+        #Aqui estamos encontrando los valores maximos de la matriz por filas, mientras que en el ejemplo anterior encontramos los valores maximos de la matriz por columnas
+```
+
 
 
 #### 2️⃣ Método .min()
@@ -45,7 +90,7 @@ matriz.min()
 
 
 #### 3️⃣ Método .shape
-Este atributo de la clase de las matrices nos permite encontrar el las dimensiones (número de columnas y de filas) de una matriz.
+Este atributo de la clase de las matrices nos permite encontrar las dimensiones (número de columnas y de filas) de una matriz.
 
 
 ```python title="Encontrar las dimensiones de una matriz"
@@ -130,6 +175,79 @@ matriz = np.array([[1,2,3],[4,5,6],[7,8,9]])
 matriz[matriz>5]
 #Aqui estamos encontrando los elementos de la matriz que sean mayores a 5
 ```
+
+#### 🔟 Método .reshape()
+
+
+Con este método estamos modificando la forma del determinado arreglo sin cambiar sus datos. Para ello, el argumento que le enviamos debe de estar en un iterable (como lo es una tupla) en el cual el primer elemento corresponde al número de filas y el segundo al número de columnas.
+
+
+```python title="Cambiar la forma de una matriz"
+import numpy as np
+np.arange(12, dtype=np.int64).reshape((4,3))
+	    array([[0, 1, 2],
+       		   [3, 4, 5],
+       		   [6, 7, 8],
+               [9, 10, 11]], dtype=int64)
+```
+
+
+De esta forma estamos indicando que la matriz va a tener 4 filas y 3 columnas. Ahora bien, es importante denotar que la nueva forma de la matriz debe de ser tal que pueda tener la misma cantidad de elementos que la forma original.
+
+#### 1️⃣1️⃣ Método .mean()
+
+Este método permite saber el promedio numérico de los datos de la matriz con base a un eje en específico.
+
+
+```python title="Encontrar el promedio de los datos de una matriz"
+import numpy as np
+x = np.arange(15, dtype=np.int64).reshape((3,5))
+	    array([[ 0,  1,  2,  3,  4],
+       		   [ 5,  6,  7,  8,  9],
+       		   [10, 11, 12, 13, 14]], dtype=int64)
+x.mean(axis = 0)
+	     array([ 5, 6,  7, 8, 9])
+```	
+
+
+#### 1️⃣2️⃣ Método .linspace()
+
+
+El respectivo método nos da muestras numéricas en un incremento o decremento uniforme con base a un intervalo. El primer argumento que recibe es el valor de inicio, el segundo es el valor donde termina, y el tercero es la cantidad de muestras.
+
+
+```python title="Crear un arreglo de muestras numéricas en un incremento o decremento uniforme"
+import numpy as np
+np.linspace(0, 8, 5)
+         array([ 0., 2., 4., 6., 8.])
+```
+
+#### 1️⃣3️⃣ Método .arange()
+
+
+Este método nos arroja un arreglo con base en un rango de números.
+
+
+```python title="Crear un arreglo con base en un rango de números"
+import numpy as np
+np.arange(10)
+	    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        #Aqui estamos creando un arreglo de 10 elementos, los cuales son números del 0 al 9
+```
+
+
+Ahora bien, este método acepta otro argumento que permite definir el tipo de dato que se va a guardar en el determinado arreglo.
+
+
+```python title="Crear un arreglo con base en un rango de números con tipo de dato especifico"
+import numpy as np
+np.arange(10, dtype=np.float32)
+	    array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9.], dtype=float32)
+```
+
+
+En este sentido, con dtype podemos definir dicho tipo de dato, y para lo cual en el ejemplo mostrado, ahora cada dato se guarda como un float de 32 bits. Cabe destacar que el tipo de dato aplica para todos los datos del arreglo o matriz, ya que para un arreglo en Python es fundamental que todos los datos sean del mismo tipo.
+
 
 ### 🤔 Conceptos basicos de matrices
 Una matriz se compone por filas y columnas, las cuales se pueden representar de la siguiente manera:
