@@ -326,7 +326,7 @@ La Matriz Triangular Inferior es aquella que tiene todos sus elementos por encim
 En la siguiente imagen se muestran los dos tipos de matrices triangulares:
 
 
-![Matriz triangular] (/img/numpy/matrices/triangular.jpg)
+![Matriz triangular](/img/numpy/matrices/triangular.jpg)
 
 ### 9️⃣ Matriz transpuesta
 La Matriz transpuesta de cualquier matriz es aquella que se obtiene al cambiar las filas por las columnas de una matriz. Por ejemplo:

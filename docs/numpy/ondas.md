@@ -7,11 +7,11 @@ sidebar_position: 4
 Las ondas son transmisiones de energía sin desplazamiento de materia que resultan en vibraciones u oscilaciones. Para describirlas, tenemos tres características fundamentales:
 
 
-        -Amplitud: altura de las oscilaciones.
+- Amplitud: altura de las oscilaciones.
 
-        -Longitud: distancia entre dos oscilaciones.
+- Longitud: distancia entre dos oscilaciones.
 
-        -Frecuencia: número de oscilaciones por segundo.
+- Frecuencia: número de oscilaciones por segundo.
 
 
 ## 💡Luz
@@ -35,9 +35,9 @@ Las ondas electromagnéticas luminosas que inciden en el ojo deben estar dentro 
 El globo ocular está formado por tres capas:
 
 
-        1) Esclerótica (exterior): es una capa protectora
-        2) Coroides (intermedia): suministra nutrientes al ojo.
-        3) Retina (interior): transforma los estímulos luminosos en energía electroquímica y la envía a los centros perceptivos del cerebro. En ella se encuentran las células fotorreceptoras.
+1. Esclerótica (exterior): es una capa protectora
+2. Coroides (intermedia): suministra nutrientes al ojo.
+3. Retina (interior): transforma los estímulos luminosos en energía electroquímica y la envía a los centros perceptivos del cerebro. En ella se encuentran las células fotorreceptoras.
 
 ![Ojo](/img/numpy/matrices/Ojo.jpg)
 
@@ -68,8 +68,8 @@ A diferencia de los conos. no son capaces de distinguir colores, sólo perciben 
 Un sensor de imagen, alojado en una cámara, es el dispositivo que captura la luz e inicia el proceso de convertir la imagen capturada en una digital. Para ello existen dos tipos que tienen como objetivo hacer la conversión de analógico a digital (A/D):
 
 
-#### 1️⃣ CMOS: Complementary Metal Oxide Semiconductor
-#### 2️⃣ CCD: Charge-Coupled Device
+1. CMOS: Complementary Metal Oxide Semiconductor
+2. CCD: Charge-Coupled Device
 
 
 ### 🎥 Filtro de Bayer
