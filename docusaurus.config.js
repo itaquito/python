@@ -87,9 +87,9 @@ const config = {
             to: '/category/numpy',
           },
           {
-            label: 'OpenCV',
+            label: 'Procesamiento de imágenes',
             position: 'left',
-            to: '/category/opencv',
+            to: '/category/procesamiento-de-imagenes',
           },
           {
             href: 'https://github.com/itaquito/python',
@@ -125,8 +125,8 @@ const config = {
                 to: '/category/numpy',
               },
               {
-                label: 'OpenCV',
-                to: '/category/opencv',
+                label: 'Procesamiento de imágenes',
+                to: '/category/procesamiento-de-imagenes',
               },
             ],
           },
