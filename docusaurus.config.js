@@ -87,6 +87,11 @@ const config = {
             to: '/category/numpy',
           },
           {
+            label: 'Procesamiento de imágenes',
+            position: 'left',
+            to: '/category/procesamiento-de-imagenes',
+          },
+          {
             href: 'https://github.com/itaquito/python',
             label: 'GitHub',
             position: 'right',
@@ -118,6 +123,10 @@ const config = {
               {
                 label: 'NumPy',
                 to: '/category/numpy',
+              },
+              {
+                label: 'Procesamiento de imágenes',
+                to: '/category/procesamiento-de-imagenes',
               },
             ],
           },
