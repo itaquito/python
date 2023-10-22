@@ -24,7 +24,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread('img/transformaciones/imagen.jpg', 0)
+img=cv.imread('../images/apple.jpg',0)
 c = 255 / np.log(1 + np.max(img))
 log_transformed = c * (np.log(img + 1))
 log_transformed = np.array(log_transformed, dtype=np.uint8)
@@ -32,6 +32,10 @@ log_transformed = np.array(log_transformed, dtype=np.uint8)
 plt.imshow(log_transformed, cmap='gray')
 plt.show()
 ```
+
+Aqui se muestra la aplicación de la transformación logarítmica en una imagen.
+
+![Transgamma](/img/procesamiento-de-imagenes/imagenes/transformaciones/Logaritmica.png)
 
 ## 👾 Transformación Gamma---ley de potencia
 
@@ -44,10 +48,13 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread('img/transformaciones/imagen.jpg', 0)
-gamma = 0.5
+img=cv.imread('../images/lena.jpg',0) gamma = 0.5
 gamma_corrected = np.array(255 * (img / 255) ** gamma, dtype='uint8')
 
 plt.imshow(gamma_corrected, cmap='gray')
 plt.show()
 ```
+
+A continuacion se muestra el antes y despues de la aplicación de la transformación gamma.
+
+![Transgamma](/img/procesamiento-de-imagenes/imagenes/transformaciones/gamma.png)
