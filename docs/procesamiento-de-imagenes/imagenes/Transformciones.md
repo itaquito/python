@@ -11,7 +11,7 @@ Las técnicas de dominio espacial operan directamente sobre los píxeles, mientr
 
 ## 🎋 Función de Umbralización---Tresholding
 
-La técnica de umbralizacion de una imagen busca obtener un valor, denominado umbral, que permita binarizar la imagen en escala de grises modificando el valor de todos los pixeles disminuyendo a cero los pixeles con un valor inferior al del umbral y aumentandoa al valor seleccionado los pixeles que superen el valor del umbral, separando de festa manera el fondo y el objeto que se desea observar.
+La técnica de umbralización de una imagen busca obtener un valor, denominado umbral, que permita binarizar una imagen en escala de grises modificando el valor de todos los pixeles disminuyendo a cero los pixeles con un valor inferior al del umbral y aumentandoa al valor seleccionado los pixeles que superen el valor del umbral, separando de esta manera el fondo y el objeto que se desea observar.
 
 ```python title="Ejemplo de cómo aplicar la umbralizacion en una imagen en python"
 import cv2 as cv
@@ -24,6 +24,8 @@ img = cv.threshold(img, 128, 255, cv.THRESH_BINARY_INV)[1]
 plt.imshow(img, cmap='gray')
 plt.show()
 ```
+
+![Transumb](/img/procesamiento-de-imagenes/imagenes/transformaciones/umbralizacion.png)
 
 ## 🔳 Negativo de una Imagen
 
@@ -46,6 +48,8 @@ img = cv.imread('img/transformaciones/imagen.jpg', 0)
 plt.imshow(255 - img, cmap='gray')
 plt.show()
 ```
+
+![Transneg](/img/procesamiento-de-imagenes/imagenes/transformaciones/negativo.png)
 
 ## 🪵 Transformación Logarítmica
 
