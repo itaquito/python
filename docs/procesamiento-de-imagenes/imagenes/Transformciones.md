@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🚀 Transformaciones de una imagen"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # 🚀 Transformaciones de intensidad y filtrado espacial
