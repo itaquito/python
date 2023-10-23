@@ -25,7 +25,7 @@ plt.imshow(img, cmap='gray')
 plt.show()
 ```
 
-![Transumb](/img/procesamiento-de-imagenes/imagenes/transformaciones/umbralizacion.png)
+![Transumb](/img/procesamiento-de-imagenes/imagenes/transformaciones/umbralizacion.jpg)
 
 ## 🔳 Negativo de una Imagen
 
@@ -49,7 +49,7 @@ plt.imshow(255 - img, cmap='gray')
 plt.show()
 ```
 
-![Transneg](/img/procesamiento-de-imagenes/imagenes/transformaciones/negativo.png)
+![Transneg](/img/procesamiento-de-imagenes/imagenes/transformaciones/negativo.jpg)
 
 ## 🪵 Transformación Logarítmica
 
