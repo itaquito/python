@@ -29,7 +29,7 @@ plt.show()
 
 El negativo de una imagen con niveles de intensidad en el rango [0, L - 1] se obtiene utilizando la función de transformación del negativo que tiene la forma:
 
-s = L - 1 - r
+**s = L - 1 - r**
 
 L (número máximo de combinaciones) - 1 = 256 - 1
 
