@@ -11,7 +11,7 @@ Es importante conocer los conceptos de vencidad, adyacencia y conectividad para 
 
 Dos pixeles son adyacentes cuando estos dos comparten sus fronteras (verticalues u horizontales) o están juntos diagonalmente.
 
-![Ejemplo de la adyacencia de dos pixeles](/img/procesamiento-de-imagenes/imagenes/vencidad-adyacencia-conectividad/adyacencia.png)
+![Ejemplo de la adyacencia de dos pixeles](/img/procesamiento-de-imagenes/imagenes/vencidad-adyacencia-conectividad/adyacencia.PNG)
 
 ## 💡 Vencidades de un pixel
 
