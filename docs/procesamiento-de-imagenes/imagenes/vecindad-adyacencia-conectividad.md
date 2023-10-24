@@ -1,45 +1,45 @@
 ---
-sidebar_label: '✏️ Vencidad, adyacencia y conectividad de un pixel.'
+sidebar_label: '✏️ Vecindad, adyacencia y conectividad de un pixel.'
 sidebar_position: 5
 ---
 
-# ✏️ Vencidad, adyacencia y conectividad de un pixel.
+# ✏️ Vecindad, adyacencia y conectividad de un pixel.
 
-Es importante conocer los conceptos de vencidad, adyacencia y conectividad para saber cómo un pixel se relaciona o conecta con los que tiene al rededor.
+Es importante conocer los conceptos de vecindad, adyacencia y conectividad para saber cómo un pixel se relaciona o conecta con los que tiene al rededor.
 
 ## 🔎 Adyacencia de un pixel
 
 Dos pixeles son adyacentes cuando estos dos comparten sus fronteras (verticalues u horizontales) o están juntos diagonalmente.
 
-![Ejemplo de la adyacencia de dos pixeles](/img/procesamiento-de-imagenes/imagenes/vencidad-adyacencia-conectividad/adyacencia.png)
+![Ejemplo de la adyacencia de dos pixeles](/img/procesamiento-de-imagenes/imagenes/vecindad-adyacencia-conectividad/adyacencia.png)
 
-## 💡 Vencidades de un pixel
+## 💡 Vecindades de un pixel
 
-Si consideramos un pixel (P) en una imagen con coordenadas (x, y), este tiene un total de 8 pixeles vencinos. Las vencidades de este pixel son todos los demás pixeles que lo rodean. Si un pixel se encuentra al borde de una imagen, entonces su cantidad de vencinos se verá dismunuida.
+Si consideramos un pixel (P) en una imagen con coordenadas (x, y), este tiene un total de 8 pixeles vecinos. Las vecindades de este pixel son todos los demás pixeles que lo rodean. Si un pixel se encuentra al borde de una imagen, entonces su cantidad de vecinos se verá dismunuida.
 
-Existen varios tipos de vencidad dependiendo de los pixeles a los que nos referimos.
+Existen varios tipos de vecindad dependiendo de los pixeles a los que nos referimos.
 
-### 4-vencidad
+### 4-vecindad
 
-La 4-vencidad o `N₄(P)` es el conjunto de los 4 pixeles que tienen adyacencia con el pixel de forma vertical y horizontal. Estos pixeles vencinos los podemos identificar con las coordenadas (x+1 , y), (x-1 , y), (x, y+1) y (x, y-1).
+La 4-vecindad o `N₄(P)` es el conjunto de los 4 pixeles que tienen adyacencia con el pixel de forma vertical y horizontal. Estos pixeles vecinos los podemos identificar con las coordenadas (x+1 , y), (x-1 , y), (x, y+1) y (x, y-1).
 
-### Vencidad diagonal
+### Vecindad diagonal
 
-La vencidad diagonal o `Nd(p)` es el conjunto de los 4 pixeles que tienen adyacencia con el pixel en las dos diagonal. Estos pixeles vencinos los podemos identificar con las coordenadas (x+1 , y+1), (x+1 , y-1), (x-1, y+1) y (x-1, y-1).
+La vecindad diagonal o `Nd(p)` es el conjunto de los 4 pixeles que tienen adyacencia con el pixel en las dos diagonal. Estos pixeles vecinos los podemos identificar con las coordenadas (x+1 , y+1), (x+1 , y-1), (x-1, y+1) y (x-1, y-1).
 
-### 8-vencidad
+### 8-vecindad
 
-Finalmente, la 8-vencidad o `N₈(p)` es la unión entre los pixeles de la 4 vencidad y los de la vencidad diagonal, dando en total 8 pixeles. En otras palabras, son todos los pixeles que tienen adyacencia con el pixel de forma vertical, horizontal y las dos diagonales.
+Finalmente, la 8-vecindad o `N₈(p)` es la unión entre los pixeles de la 4 vecindad y los de la vecindad diagonal, dando en total 8 pixeles. En otras palabras, son todos los pixeles que tienen adyacencia con el pixel de forma vertical, horizontal y las dos diagonales.
 
 ## 🧮 Conectividad
 
 ### Conectividad 4
 
-Dos pixeles, `p` y `q` están conectados o tienen conectividad 4 si `q` pertenece a la 4-vencidad de `p`.
+Dos pixeles, `p` y `q` están conectados o tienen conectividad 4 si `q` pertenece a la 4-vecindad de `p`.
 
 ### Conectividad 9
 
-De la misma manera anterior, dos pixeles, `p` y `q` están conectados o tienen conectividad 8 si `q` pertenece a la 8-vencidad de `p`.
+De la misma manera anterior, dos pixeles, `p` y `q` están conectados o tienen conectividad 8 si `q` pertenece a la 8-vecindad de `p`.
 
 ### Conectividad mixta
 
@@ -55,8 +55,8 @@ A continuación se presentan las funciones necesarias para obtener las conectivi
 ```python title="Funciones para obtener las conectividad de un pixel en una imagen"
 import numpy as np
 
-# Definimos las vencidades más comunes y que vamos a usar para encontrar las conectividades
-VENCIDAD_4 = np.array(
+# Definimos las vecindades más comunes y que vamos a usar para encontrar las conectividades
+VECINDAD_4 = np.array(
   (
     (False, True, False),
     (True, False, True),
@@ -65,7 +65,7 @@ VENCIDAD_4 = np.array(
   dtype=bool
 )
 
-VENCIDAD_8 = np.array(
+VECINDAD_8 = np.array(
   (
     (True, True, True),
     (True, False, True),
@@ -74,7 +74,7 @@ VENCIDAD_8 = np.array(
   dtype=bool
 )
 
-VENCIDAD_D = np.array(
+VECINDAD_D = np.array(
   (
     (True, False, True),
     (False, False, False),
@@ -83,22 +83,22 @@ VENCIDAD_D = np.array(
   dtype=bool
 )
 
-# Busca los vecinos conectados con base a una vencidad determinada al rededor de un punto con unos valores de v específicos.
-# Tecnicamente gracias al parámetro de vencidad podemos checar todos los tipos de vencidades que existen en una misma función
+# Busca los vecinos conectados con base a una vecindad determinada al rededor de un punto con unos valores de v específicos.
+# Tecnicamente gracias al parámetro de vecindad podemos checar todos los tipos de vecindades que existen en una misma función
 # Regresa las coordendas en la imagen de los puntos que cumplen las condiciones.
-def obtenerConectividad(vencidad, imagen, punto, v = {1}):
+def obtenerConectividad(vecindad, imagen, punto, v = {1}):
   py, px = punto
   alto, ancho = imagen.shape
   resultado = set() # Hoy descubrí que {} crea un diccionario vacío, no un set vacío.
 
-  for yVencidad, e in enumerate(vencidad):
-    for xVencidad, revisarPixel in enumerate(vencidad[yVencidad]):
-      # Ignorar la vencidad si tiene False
+  for yVecindad, e in enumerate(vecindad):
+    for xVecindad, revisarPixel in enumerate(vecindad[yVecindad]):
+      # Ignorar la vecindad si tiene False
       if not revisarPixel: continue
 
-      # Obtener las coordendas reales en la imagen, con respecto al punto que nos dieron y la vencidad actual que estamos revisando.
-      yReal = py + (yVencidad - 1)
-      xReal = px + (xVencidad - 1)
+      # Obtener las coordendas reales en la imagen, con respecto al punto que nos dieron y la vecindad actual que estamos revisando.
+      yReal = py + (yVecindad - 1)
+      xReal = px + (xVecindad - 1)
 
       # Evitar que revisemos pixeles que esten fuera de la imagen.
       if yReal < 0 or xReal < 0: continue
@@ -120,15 +120,15 @@ def obtenerConectividadMixta(imagen, punto, v = {1}):
   resultado = set()
 
   # Obtener todos los puntos que cumplen la primera condición: q pertenece a N4(p)
-  adyacencia4 = obtenerConectividad(VENCIDAD_4, imagen, punto, v)
+  adyacencia4 = obtenerConectividad(VECINDAD_4, imagen, punto, v)
 
   # Obtener todos los puntos que cumplen el primer requisito de la segunda condición: q pertenece a ND(p)
-  adyacenciaD = obtenerConectividad(VENCIDAD_D, imagen, punto, v)
+  adyacenciaD = obtenerConectividad(VECINDAD_D, imagen, punto, v)
 
   # Revisar el siguiente requisito de la segunda condición: N4(p) interesección N4(q) está vacío.
-  N4P = obtenerConectividad(VENCIDAD_4, imagen, punto, v) # N4(p)
+  N4P = obtenerConectividad(VECINDAD_4, imagen, punto, v) # N4(p)
   for posibleQ in adyacenciaD:
-    N4Q = obtenerConectividad(VENCIDAD_4, imagen, posibleQ, v)
+    N4Q = obtenerConectividad(VECINDAD_4, imagen, posibleQ, v)
     # & significa intersección
     # == set() revisa si el set/conjunto está vacío
     if (N4P & N4Q) == set():
@@ -184,8 +184,8 @@ print("V:", v)
 arregloAleatorio = np.random.randint(10, size=(10, 10), dtype=np.uint8)
 print("Arreglo original\n", arregloAleatorio)
 
-conectividad4 = obtenerConectividad(VENCIDAD_4, arregloAleatorio, punto, v)
-conectividad8 = obtenerConectividad(VENCIDAD_8, arregloAleatorio, punto, v)
+conectividad4 = obtenerConectividad(VECINDAD_4, arregloAleatorio, punto, v)
+conectividad8 = obtenerConectividad(VECINDAD_8, arregloAleatorio, punto, v)
 conectividadMixta = obtenerConectividadMixta(arregloAleatorio, punto, v)
 
 
