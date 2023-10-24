@@ -15,6 +15,6 @@ En el caso del modelo RGB hay tres canales y, en cada uno, los elementos pueden 
 
 ## RGB vs BGR
 
-BGR es un modelo prácticamente igual a RGB, con la única diferencia de que el orden de los canales está invertido. De esta forma empieza por el canal verde y termina con el rojo. Para transformar una imagen de BGR a RGB ocupamos la función de OpenCV: ***'cv.cvtcolor'***, y luego especificamos el cambio de espacio de color a realizar, siendo en este caso **'cv.COLOR_BGR2RGB'**.
+BGR es un modelo prácticamente igual a RGB, con la única diferencia de que el orden de los canales está invertido. De esta forma empieza por el canal verde y termina con el rojo. Para transformar una imagen de BGR a RGB ocupamos la función de OpenCV: **_'cv.cvtcolor'_**, y luego especificamos el cambio de espacio de color a realizar, siendo en este caso **'cv.COLOR_BGR2RGB'**.
 
 <img src="/img/procesamiento-de-imagenes/espacios-de-color/RGBvsBGR.png" alt="RGBvsBGR" width="400"/>

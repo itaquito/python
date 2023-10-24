@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Espacio de color que se maneja bajo tres parámetros: **Hue** (tono), **Saturation** (saturación) y **Light** (luminosidad) o **Value** (valor).
 
-![Modelo HSL](/img/procesamiento-de-imagenes/espacios-de-color/hsl.png)  ![Modelo HSV](/img/procesamiento-de-imagenes/espacios-de-color/hsv.png)
+![Modelo HSL](/img/procesamiento-de-imagenes/espacios-de-color/hsl.png) ![Modelo HSV](/img/procesamiento-de-imagenes/espacios-de-color/hsv.png)
 
 ## Tono
 
