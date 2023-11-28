@@ -142,7 +142,7 @@ const config = {
                 href: 'https://ellibrodepython.com/',
               },
               {
-                label: 'Contribuyentes de esta página',
+                label: 'Contribuidores de esta página',
                 href: 'https://github.com/itaquito/python/graphs/contributors',
               },
               {

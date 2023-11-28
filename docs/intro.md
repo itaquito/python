@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # ⭐ Introducción
 
-En esta página explicaremos los **conceptos básicos** y de la **Programación Orientada a Objetos** en Python.
+En esta página explicaremos los **conceptos básicos** y de la **Programación Orientada a Objetos** en Python, además del **Procesamiendo Digital de Imágenes** en OpenCV.
 
 ## 📍 ¿Dónde empezar?
 
