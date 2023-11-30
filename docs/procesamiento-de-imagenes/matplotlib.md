@@ -1,6 +1,6 @@
 ---
-sidebar_label: '🎨 Matplotlib'
-sidebar_position: 3
+sidebar_label: "🎨 Matplotlib"
+sidebar_position: 7
 ---
 
 # 🎨 Matplotlib
