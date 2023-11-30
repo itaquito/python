@@ -102,7 +102,7 @@ img_erode = cv.morphologyEx(img_bin,cv.MORPH_ERODE,kernel)
 plt.imshow(img_erode, cmap='gray')
 ```
 
-Aqui se ve la diferencia entre la imagen original y la imagen erosionada.
+AquÍ se ve la diferencia entre la imagen original y la imagen erosionada.
 
 ![Imagen erosionada](/img/procesamiento-de-imagenes/imagenes/opmorf/erode.png)
 
