@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🚀 Transformaciones de una imagen"
+sidebar_label: '🚀 Transformaciones de una imagen'
 sidebar_position: 6
 ---
 
