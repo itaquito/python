@@ -1,5 +1,5 @@
 ---
-sidebar_label: '📝 Ejemplos prácticos'
+sidebar_label: "📝 Ejemplos prácticos"
 sidebar_position: 4
 ---
 
@@ -11,7 +11,7 @@ Vamos a poner en práctica todo lo que hemos visto hasta ahora:
 
 Ahora bien que sabemos lo que es una imágen y cómo es que esta se comporta, mostraremos un ejemplo de cómo se usan los comandos de opencv para una imágen:
 
-1. Como primer instancia importamos la biblioteca OpenSV con el seudonombre `cv` y Matplotlib como `plt`:
+1. Como primer instancia importamos la biblioteca OpenCV con el pseudonombre `cv` y Matplotlib como `plt`:
 
 ```python title="Importar OpenCV y Matplotlib"
 import cv2 as cv
