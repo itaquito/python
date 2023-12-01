@@ -80,9 +80,9 @@ kernel = np.ones((3,3),np.uint8)
     cv.morphologyEx(img_bin,cv.funcion,kernel)
 ```
 
-## 🪃 Operaciones Morfológicas Primitivas
+## 🖌️ Operaciones Morfológicas Primitivas
 
-### Erosión ⬜
+### ⬜ Erosión
 
 La erosión es una de las operaciones morfológicas más simples. Esta operación consiste en desgastar los bordes de los objetos que se encuentran en primer plano, es decir, los píxeles que comparten frontera con el borde en este tipo de operaciones el tamaño del kernel es importante, pues si es muy grande, puede llegar a borrar la imagen.
 
@@ -106,7 +106,7 @@ AquÍ se ve la diferencia entre la imagen original y la imagen erosionada.
 
 ![Imagen erosionada](/img/procesamiento-de-imagenes/imagenes/opmorf/erode.png)
 
-### Dilatación ⬛
+### ⬛ Dilatación
 
 La dilatación es una operación morfológica que consiste en agregar píxeles a los bordes de los objetos que se encuentran en primer plano, es decir, los píxeles blancos, para aumentar su tamaño.
 
@@ -134,7 +134,7 @@ Aqui se ve la diferencia entre la imagen original y la imagen dilatada.
 
 Las operaciones morfológicas vistas anteriormente, dilatación y erosión, pueden combinarse para implementarse y formar otras operaciones para distintos propósitos.
 
-### Apertura ⭕
+### ⭕ Apertura
 
 La operación de apertura realiza una erosión en la imagen, seguido de una dilatación, al resultado de la imagen erosionadas, utilizando el mismo kernel o elemento estructurante en ambos casos.
 
@@ -154,7 +154,7 @@ img_open = cv.morphologyEx(img_bin,cv.MORPH_OPEN,kernel)
 plt.imshow(img_open, cmap='gray')
 ```
 
-### Cierre 🔴
+### 🔴 Cierre
 
 La operación de cierre es inversa a la apertura, pues primero dilata la imagen y luego la erosiona con el mismo kernel.
 
@@ -174,7 +174,7 @@ img_close = cv.morphologyEx(img_bin,cv.MORPH_CLOSE,kernel)
 plt.imshow(img_close, cmap='gray')
 ```
 
-### Gradiente 🔲
+### 🔲 Gradiente
 
 Esta operación es equivalente a la diferencia entre las operaciones de dilatación y erosión, por lo que nos puede ser útil para obtener siluetas.
 
