@@ -1,6 +1,6 @@
 ---
 sidebar_label: '🌐 Componentes conectados'
-sidebar_position: 9
+sidebar_position: 12
 ---
 
 # 🌐 Componentes conectados

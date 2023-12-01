@@ -1,6 +1,6 @@
 ---
-sidebar_label: "🐼 Operaciones Morfológicas"
-sidebar_position: 8
+sidebar_label: '🐼 Operaciones Morfológicas'
+sidebar_position: 10
 ---
 
 # 🐼 Operaciones Morfológicas
