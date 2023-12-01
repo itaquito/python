@@ -14,7 +14,7 @@ Las operaciones morfológicas son un conjunto de operaciones que procesan imáge
 Un elemento estructurante (SE) es un kernel, y específicamente es una matriz que identifica el píxel en la imagen que se está procesando y define el entorno utilizado en el procesamiento de ese píxel
 Estos elementos se aplican en una imagen binarizada para diferenciar entre el fondo y los píxeles del primer plano. Además los SE contienen elementos que se dicen Not Care (0’s).
 
-```Python title="Ejemplos de un elemento estructurante"
+```python title="Ejemplos de un elemento estructurante"
 # Rectangular
 cv.getStructuringElement(cv.MORPH_RECT,(5,5))
 array([[1, 1, 1, 1, 1],
@@ -46,7 +46,7 @@ Para realizar este proceso, seguimos los siguientes pasos
 1. Importamos las mismas bibliotecas que en los anteriores métodos.
 
 ```python title="Importar bibliotecas"
- import cv2 as cv
+import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -77,7 +77,7 @@ kernel = np.ones((3,3),np.uint8)
    - El tercero para el kernel
 
 ```python title="Función morfológica"
-    cv.morphologyEx(img_bin,cv.funcion,kernel)
+cv.morphologyEx(img_bin,cv.funcion,kernel)
 ```
 
 ## 🖌️ Operaciones Morfológicas Primitivas

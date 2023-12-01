@@ -14,10 +14,10 @@ Un problema común a la hora de establecer el umbral es elegir el valor más apr
 En OpenCV, este tipo de umbralización se puede ocupar si en el método 'cv.threshold()' ingresamos como argumento el tipo de binarización a realizar 'cv.THRESH_OTSU'. Cabe recalcar que aunque uno de los parámetros de la función sea el valor del umbral, nosotros podemos ingresar una variable en su lugar, y esto en vista de que al final el método de Otsu elegirá el valor más óptimo partiendo de los propios valores de la imagen.
 
 ```python title="Ejemplo"
-    imagen = cv.imread("../OpenCV-images/bw.png", 0)
-    UMBRAL = 0
-    img_otsu = cv.threshold(imagen, UMBRAL, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
-    plt.imshow(img_otsu[1], cmap="gray")
+imagen = cv.imread("../OpenCV-images/bw.png", 0)
+UMBRAL = 0
+img_otsu = cv.threshold(imagen, UMBRAL, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
+plt.imshow(img_otsu[1], cmap="gray")
 ```
 
 <img src="/img/procesamiento-de-imagenes/imagenes/metodos-umbralizacion/bw-otsu.png" alt="bw-otsu" width="400"/>
@@ -29,9 +29,9 @@ La umbralización global puede llegar a ser efectiva en muchos casos, pero tambi
 En OpenCV, encontramos este método como 'cv.adaptiveThreshold()'. Hay en sí dos detalles a destacar de dicho método. El primero es que este no recibe como argumento un umbral, y lo cual hace sentido cuando entendemos que el umbral varía de pixel a pixel puesto que no hablamos de una umbralización global, sino local. El segundo detalle es que es necesario especificar el tipo de umbralización adaptativa, y para lo cual podemos ocupar la Mediana o la Gaussiana.
 
 ```python title="Ejemplo"
-    imagen = cv.imread("../OpenCV-images/bw.png", 0)
-    img_adapt = cv.adaptiveThreshold(imagen, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 11, 5)
-    plt.imshow(img_adapt, cmap="gray")
+imagen = cv.imread("../OpenCV-images/bw.png", 0)
+img_adapt = cv.adaptiveThreshold(imagen, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 11, 5)
+plt.imshow(img_adapt, cmap="gray")
 ```
 
 <img src="/img/procesamiento-de-imagenes/imagenes/metodos-umbralizacion/bw-adapt.png" alt="bw-adapt" width="400"/>
