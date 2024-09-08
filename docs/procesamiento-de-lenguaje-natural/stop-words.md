@@ -53,3 +53,15 @@ from nltk.tokenize import word_tokenize
 words=nltk.word_tokenize("A Itaquito le gustan los gatos")
 no_stop_words = [word for word in words if word.lower() not in stop_words]
 ```
+
+En este caso, estamos eliminando las stop words de la frase "A Itaquito le gustan los gatos".
+
+El texto resultante será:
+
+```python
+['Itaquito', 'gustan', 'gatos']
+```
+
+## 📝 Conclusión
+
+En resumen, las "stop words" son palabras comunes que no agregan valor semántico en el análisis de texto y, por lo tanto, se eliminan para mejorar la eficiencia de los algoritmos de procesamiento de lenguaje natural. Usar librerías como nltk nos permite identificar y remover estas palabras fácilmente en diferentes idiomas. Esto optimiza el análisis de datos textuales, ya que reduce el ruido y permite que los modelos se concentren en las palabras que realmente importan. Implementar esta técnica es esencial para obtener resultados más precisos y relevantes en proyectos de PLN.
