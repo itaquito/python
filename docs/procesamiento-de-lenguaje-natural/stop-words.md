@@ -20,3 +20,15 @@ Estas Incluyen:
 - Adverbios: aquí, allí, ahora
 
 - Verbos auxiliares: ser, estar, haber
+
+- Otros: que, como, por
+
+## 📚 ¿Cómo usar Stop Words en Python?
+
+Para usar Stop Words en Python, necesitamos usar la libreria que ya hemos estado hablando, `nltk`.
+
+Teniendo ya instalada la librería, podemos hacer lo siguiente:
+
+```python title="Importar la librería nltk y descargar las stop words"
+
+```
