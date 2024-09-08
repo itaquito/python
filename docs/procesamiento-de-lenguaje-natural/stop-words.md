@@ -10,17 +10,11 @@ Las "stop words" son palabras que no aportan valor semántico relevante en el an
 Estas Incluyen:
 
 - Artículos: el, la, los
-
 - Pronombres: yo, tú, él
-
 - Preposiciones: a, ante, bajo
-
 - Conjunciones: y, o, pero
-
 - Adverbios: aquí, allí, ahora
-
 - Verbos auxiliares: ser, estar, haber
-
 - Otros: que, como, por
 
 ## 📚 ¿Cómo usar Stop Words en Python?
