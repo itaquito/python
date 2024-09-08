@@ -1,5 +1,5 @@
 ---
-sidebar_label: "💰 Herencia"
+sidebar_label: '💰 Herencia'
 sidebar_position: 8
 ---
 
@@ -31,10 +31,10 @@ class VehiculoConRuedas:
   def __init__(self, ruedas, frenos):
     self.ruedas = ruedas
     self.frenos = frenos
-  
+
   def __str__(self):
     return f"Este vehículo tiene {self.ruedas} ruedas y tiene frenos {self.frenos}"
-  
+
 class Moto(VehiculoConRuedas):
   pass
 
@@ -77,10 +77,10 @@ class Persona:
   def __init__(self, nombre, edad):
     self.nombre = nombre
     self.edad = edad
-  
+
   def __str__(self):
     return f"{self.nombre} tiene {self.edad} años."
-  
+
   # Definimos un método saludar para Persona
   def saludar(self):
     print("Hola persona")
@@ -92,14 +92,14 @@ class Profesor(Persona):
     super().__init__(nombre, edad)
     self.materia = materia
     self.sueldo = sueldo
-  
+
   # Definimos otro método saludar para Profesor
   def saludar(self):
     print("Hola profesor genérico")
-  
+
   def __str__(self):
     return f"{super().__str__()} El profesor da la materia {self.materia} y le pagan ${self.sueldo}"
-  
+
   def aumentar(self, porcentaje):
     self.sueldo += self.sueldo * (porcentaje / 100)
 

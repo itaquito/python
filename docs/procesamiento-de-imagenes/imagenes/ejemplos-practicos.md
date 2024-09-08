@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📝 Ejemplos prácticos"
+sidebar_label: '📝 Ejemplos prácticos'
 sidebar_position: 4
 ---
 

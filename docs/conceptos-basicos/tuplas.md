@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🔍 Tuplas"
+sidebar_label: '🔍 Tuplas'
 sidebar_position: 17
 ---
 

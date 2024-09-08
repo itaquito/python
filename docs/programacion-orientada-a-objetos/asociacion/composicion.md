@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🧁 Composición"
+sidebar_label: '🧁 Composición'
 sidebar_position: 3
 ---
 
@@ -13,19 +13,19 @@ A diferencia de la agregación, la clase que compone a otra clase depende de est
 
 ```python title="Ejemplo de una clase Humano con composición"
 class Humano:
-  
+
   def __init__(self):
     self.corazon = Corazon() # Guardamos una instancia de la clase Corazon en el atributo corazon
     self.cerebro = Cerebro() # Guardamos una instancia de la clase Cerebro en el atributo cerebro
     self.piernas = [Pierna("izquierda"), Pierna("derecha")] # También podemos guardar instancias en una lista
 
 class Corazon:
-  
+
   def __init__(self):
     pass
 
 class Cerebro:
-  
+
   def __init__(self):
     pass
 
@@ -39,10 +39,10 @@ También podemos pasar nuestros atributos del constructor a las otras clases en 
 
 ```python title="Ejemplo de una clase Empleado con composición"
 class Salario:
-  
+
   def __init__(self, cantidad):
     self.__cantidad = cantidad
-  
+
   def getCantidad(self):
     return self.__cantidad
 
@@ -51,16 +51,16 @@ class Empleado:
   def __init__(self, nombre, salario):
     self.__nombre = nombre
     self.__salario = Salario(salario)
-      
+
   def getNombre(self):
     return self.__nombre
-  
+
   def getSalario(self):
     return self.__salario
-  
+
   def getSalarioMensual(self):
     return self.__salario.getCantidad() # Podemos usar self y notación punto para acceder a los métodos de la clase compuesta
-  
+
   def getSalarioAnual(self):
     return self.__salario.getCantidad() * 12
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "💊 Encapsulamiento"
+sidebar_label: '💊 Encapsulamiento'
 sidebar_position: 6
 ---
 
@@ -28,7 +28,7 @@ class Perro:
     self.raza = raza
     self.edad = edad
     self.color = color
-  
+
   def saludar(self):
     print(f"{self.__nombre} saluda!") # Aquí si podemos acceder al atributo privado
 
@@ -43,41 +43,41 @@ Los geters y setters son métodos que nos permiten establecer y leer atributos q
 
 ```python title="Ejemplo de una clase con getters y setters"
 class unPerroPrivado:
-  
+
   def __init__(self, nombre, raza, edad, color) -> None:
     self.__nombre = nombre
     self.__raza = raza
     self.__edad = edad
     self.__color = color
-  
+
   def getNombre(self):
     return self.__nombre
 
   def setNombre(self, valor):
     self.__nombre = valor
-  
+
   def getRaza(self):
     return self.__raza
-  
+
   def setRaza(self, valor):
     self.__raza = valor
-  
+
   def getEdad(self):
     return self.__edad
-  
+
   def setEdad(self, valor):
     if (isinstance(valor, int)): # Podemos validar que el valor sea realmente un número antes de guardarlo
       self.__edad = valor
-  
+
   def getColor(self):
     return self.__color
-  
+
   def setColor(self, valor):
     self.__color = valor
-  
+
   def __ladrar(self):
     print("*ladra*")
-  
+
   def llamarLadrar(self):
     self.__ladrar()
 

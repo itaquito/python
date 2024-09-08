@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🎲 Agregación"
+sidebar_label: '🎲 Agregación'
 sidebar_position: 2
 ---
 
@@ -11,14 +11,14 @@ Una clase puede recibir en su método constructor la instancia de otra clase. A 
 
 ```python title="Ejemplo de una clase Empleado con agregación"
 class Empleado:
-  
+
   def __init__(self, genero, nombre, edad, coche = None):
     # El argumento coche es opcional, por lo que puede ser que un empleado no tenga un coche.
     self.genero = genero
     self.nombre = nombre
     self.edad = edad
     self.coche = coche
-  
+
    def __str__(self):
       if self.coche:
         # Si el empleado tiene Coche
@@ -32,7 +32,7 @@ class Coche:
     self.marca = marca
     self.modelo = modelo
     self.color = color
-  
+
    def __str__(self):
     return f"Tiene un coche de la marca {self.marca}."
 ```

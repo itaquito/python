@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🔋 Sobrecarga de operadores"
+sidebar_label: '🔋 Sobrecarga de operadores'
 sidebar_position: 5
 ---
 
@@ -20,16 +20,16 @@ class Fraccion:
 
   def __str__(self):
     return f"{self.numerador}/{self.denominador}"
-  
+
   def __add__(self, otraFraccion):
     return Fraccion((self.numerador * otraFraccion.denominador) + (self.denominador * otraFraccion.numerador), (self.denominador * otraFraccion.denominador))
 
   def __sub__(self, otraFraccion):
     return Fraccion((self.numerador * otraFraccion.denominador) - (self.denominador * otraFraccion.numerador), (self.denominador * otraFraccion.denominador))
-  
+
   def __mul__(self, otroFraccion):
     return Fraccion((self.numerador * otroFraccion.numerador), (self.denominador * otroFraccion.denominador))
-  
+
   def __truediv__(self, otroFraccion):
     return Fraccion((self.numerador * otroFraccion.denominador), (self.denominador * otroFraccion.numerador))
 
@@ -65,18 +65,18 @@ En el ejemplo anterior regresamos una instancia de clase misma para que se pueda
 
 ## 🖥️ Métodos más comunes disponibles
 
-| Operador            | Signo        | Expresión     |  Método          |
-|---------------------|--------------|---------------|------------------|
+| Operador            | Signo        | Expresión     | Método           |
+| ------------------- | ------------ | ------------- | ---------------- |
 | Adición             | +            | a+b           | `__add__()`      |
 | Resta               | -            | a-b           | `__sub__()`      |
 | División            | /            | a/b           | `__truediv__()`  |
 | División redondeada | //           | a//b          | `__floordiv__()` |
 | Módulo              | %            | a%b           | `__mod__()`      |
-| Potencia            | **           | a**b          | `__pow__()`      |
-| Menor que           | <            | a<b           | `__lt__()`       |
-| Menor o igual que   | <=           | a<=b          | `__le__()`       |
-| Mayor que           | >            | a>b           | `__gt__()`       |
-| Mayor o igual que   | >=           | a>=b          | `__ge__()`       |
+| Potencia            | \*\*         | a\*\*b        | `__pow__()`      |
+| Menor que           | \<           | a\<b          | `__lt__()`       |
+| Menor o igual que   | \<=          | a\<=b         | `__le__()`       |
+| Mayor que           | \>           | a\>b          | `__gt__()`       |
+| Mayor o igual que   | \>=          | a\>=b         | `__ge__()`       |
 | Igual que           | ==           | a==b          | `__eq__()`       |
 | Diferente que       | !=           | a!=b          | `__ne__()`       |
 | Casting a int       | int()        | int(a)        | `__int__()`      |

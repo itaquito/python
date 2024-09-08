@@ -1,11 +1,11 @@
 ---
-sidebar_label: "✂️ Slicing"
+sidebar_label: '✂️ Slicing'
 sidebar_position: 7
 ---
 
 # ✂️ Slicing
 
-Si queremos agarrar una letra o letras en específico de una cadena de texto podemos utilizar slicing.<
+Si queremos agarrar una letra o letras en específico de una cadena de texto podemos utilizar slicing.
 
 ## ✏️ Ejemplos
 

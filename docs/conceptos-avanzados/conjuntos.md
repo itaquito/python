@@ -1,12 +1,11 @@
 ---
-sidebar_label: "🗄️ Conjuntos o sets"
+sidebar_label: '🗄️ Conjuntos o sets'
 sidebar_position: 2
 ---
 
 # 🗄️ Conjuntos o sets
 
-Un conjunto  o set se refiere a una colección de determinados valores que por un lado no están repetidos, y que por el otro lado no poseen ningún orden en particular.
-
+Un conjunto o set se refiere a una colección de determinados valores que por un lado no están repetidos, y que por el otro lado no poseen ningún orden en particular.
 
 ```python title="Ejemplo de cómo definir un conjunto"
 conjunto = {1, 2, 3, 4, 5} # Notése que se usan las llaves {} para definir un conjunto.
@@ -23,7 +22,6 @@ print(conjunto)
 # Este código imprime {1, 2, 3}
 ```
 
-
 Por lo mismo de que los elementos no presentan un orden, en los sets no se puede visitar un determinado elemento por su índice.
 
 ```python title="¿Indexing en conjuntos?"
@@ -32,6 +30,7 @@ conjunto[0] # Esta linea de código genera un error
 ```
 
 ## remove()
+
 Este método nos permite eliminar un determinado elemento de un conjunto. Esto resulta más eficiente para quitar un valor de un conjunto que con `pop()`, ya que este elimina un elemento al azar al no haber un orden.
 
 ```python title="Ejemplo de remove()"
@@ -46,6 +45,7 @@ print(conjunto)
 ## 🧮 Operaciones en conjuntos
 
 ### Intersección `&`
+
 Sirve para denotar los elementos que tienen en común dos conjuntos.
 
 ```python title="Ejemplo de la intersección en un set"
@@ -57,6 +57,7 @@ print(A & B)
 ```
 
 ### Unión `|`
+
 Se utiliza para presentar todos los elementos que tienen ambos conjuntos sin repeticiones.
 
 ```python title="Ejemplo de la unión en un set"
@@ -68,6 +69,7 @@ print(A | B)
 ```
 
 ### Diferencia `-`
+
 En este caso a los elementos del primer conjunto se le restan los elementos que comparte con el segundo conjunto.
 
 ```python title="Ejemplo de la diferencia en un set"
@@ -79,6 +81,7 @@ print(A - B)
 ```
 
 ### Diferencia simétrica `^`
+
 Nos enseña los elementos que hay en un conjunto o en otro, no los que están en los dos por igual.
 
 ```python title="Ejemplo de la diferencia simétrica en un set"

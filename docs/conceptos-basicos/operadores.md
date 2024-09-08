@@ -1,9 +1,9 @@
 ---
-sidebar_label: "🧮 Operadores"
+sidebar_label: '🧮 Operadores'
 sidebar_position: 3
 ---
 
-# ➕➖➗✖️  Operadores
+# ➕➖➗✖️ Operadores
 
 Python cuenta con diversos operadores que nos permiten realizar operaciones matemáticas.
 

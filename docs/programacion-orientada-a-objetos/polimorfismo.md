@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🚁 Polimorfismo"
+sidebar_label: '🚁 Polimorfismo'
 sidebar_position: 9
 ---
 

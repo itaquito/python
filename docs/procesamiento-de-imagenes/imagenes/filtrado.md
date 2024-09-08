@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📝 Filtrado"
+sidebar_label: '📝 Filtrado'
 sidebar_position: 9
 ---
 

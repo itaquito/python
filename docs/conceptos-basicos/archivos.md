@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📂 Archivos"
+sidebar_label: '📂 Archivos'
 sidebar_position: 16
 ---
 

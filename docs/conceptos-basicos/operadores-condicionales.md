@@ -1,5 +1,5 @@
 ---
-sidebar_label: "❓ Operadores condicionales"
+sidebar_label: '❓ Operadores condicionales'
 sidebar_position: 8
 ---
 
@@ -8,10 +8,10 @@ sidebar_position: 8
 Nos permiten comparar valores. Regresa un valor booleano, verdadero o falso.
 
 - **==** Igual
-- **<** Menor que
-- **>** Mayor que
-- **<=** Menor o igual que
-- **>=** Mayor o igual que
+- **\<** Menor que
+- **\>** Mayor que
+- **\<=** Menor o igual que
+- **\>=** Mayor o igual que
 - **!=** Distinto de
 
 ## ✏️ Ejemplos

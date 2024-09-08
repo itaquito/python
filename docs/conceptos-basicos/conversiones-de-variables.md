@@ -1,5 +1,5 @@
 ---
-sidebar_label: "♻️ Conversiones de variables"
+sidebar_label: '♻️ Conversiones de variables'
 sidebar_position: 6
 ---
 

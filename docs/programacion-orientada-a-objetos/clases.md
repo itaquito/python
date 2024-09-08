@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🚗 Clases"
+sidebar_label: '🚗 Clases'
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ En Python, las clases se nombran bajo la convención de UpperCamelCase, en donde
 class Gato:
   pass # Aquí irán nuestors métodos y atributos, pero por ahora lo dejaremos vacío.
 
-unGato = Gato() # unGato es una instancia de nuestra clase Gato. 
+unGato = Gato() # unGato es una instancia de nuestra clase Gato.
 ```
 
 ## Métodos iniciador y destructor
@@ -24,11 +24,11 @@ Las clases pueden tener un método iniciador (o constructor en otros lenguajes d
 
 ```python title="Ejemplo de los métodos iniciador y destructor"
 class Gato:
-		
+
   # Método iniciador
   def __init__(self):
     print("Se creó un nuevo gato")
-  
+
   ## Método destructor
   def __del__(self):
     print("Se eliminó un gato :c")

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🛸 Objetos"
+sidebar_label: '🛸 Objetos'
 sidebar_position: 4
 ---
 
@@ -9,7 +9,7 @@ Como ya hemos dicho en las secciones anteriores, un objeto es una instancia de u
 
 ```python title="Ejemplo cómo definir un objeto"
 class Gato:
-	
+
   # Atributos de instancia
   def __init__(self, nombre, raza, color):
     self.nombre = nombre
@@ -19,19 +19,19 @@ class Gato:
 tiburcio = Gato("Tiburcio", "persa", "café")
 ```
 
-La variable es una instanciación de la clase ‘Gato’. De esta forma, dicha variable ya no es propiamente una variable, sino que es un objeto. 
+La variable es una instanciación de la clase ‘Gato’. De esta forma, dicha variable ya no es propiamente una variable, sino que es un objeto.
 
-Dicho esto, ahora podemos accerder a los atributos y métodos de dicho objeto con la notación punto `.`. 
+Dicho esto, ahora podemos accerder a los atributos y métodos de dicho objeto con la notación punto `.`.
 
 ```python title="Ejemplo cómo acceder a los atributos y métodos de un objeto con la notación punto"
 class Gato:
-	
+
   # Atributos de instancia
   def __init__(self, nombre, raza, color):
     self.nombre = nombre
     self.raza = raza
     self.color = color
-  
+
   def maullar(self):
     print("Meow!")
 

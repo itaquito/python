@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🔄 Ciclo while"
+sidebar_label: '🔄 Ciclo while'
 sidebar_position: 13
 ---
 

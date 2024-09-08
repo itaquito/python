@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🚀 Alcance de variables"
+sidebar_label: '🚀 Alcance de variables'
 sidebar_position: 6
 ---
 
@@ -31,7 +31,7 @@ print(variable) # Aquí la variable está definida a "Manzana"
 
 ## global
 
-En el último ejemplo, podemos usar la palabra reservada `global` para definir la variable como una variable global 
+En el último ejemplo, podemos usar la palabra reservada `global` para definir la variable como una variable global
 
 ```python title="Ejemplo del alcance de una variable con global"
 variable = "Manzana"

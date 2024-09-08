@@ -1,9 +1,10 @@
 ---
-sidebar_label: "⚠️ Manejo de excepciones"
+sidebar_label: '⚠️ Manejo de excepciones'
 sidebar_position: 5
 ---
 
 # ⚠️ Manejo de excepciones
+
 Cuando nuestro código genera algún error, ya sea porque queremos dividir un número entre cero o usamos una librería mal, podemos manejar el error en lugar de hacer que se termine el programa.
 
 Para detectar errores usamos la palabra clave `try` y `except`. El código dentro de `except` es el que se ejecutará en caso de que el código en `try` cause un error.
@@ -31,7 +32,7 @@ try:
   24 / 0
 except ZeroDivisionError as e:
   print("Intentaste dividir entre 0", e)
-else: 
+else:
   print("No hubo error")
 ```
 
@@ -42,7 +43,7 @@ try:
   24 / 0
 except ZeroDivisionError as e:
   print("Intentaste dividir entre 0", e)
-else: 
+else:
   print("No hubo error")
 finally:
   print("Siempre se ejecuta esto")

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🤔 Docstring"
+sidebar_label: '🤔 Docstring'
 sidebar_position: 7
 ---
 
@@ -39,6 +39,7 @@ help(multiplicar)
 No hay un estilo o convención predeterminado para escribir un docstring, podemos elegir con completa libertad el que más nos guste. Sin embargo, nos debemos apegar al estilo que seleccionemos a lo largo de todo nuestro código.
 
 Alguno de los estilos más utilizados en Python son:
-* [Sphinx](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html#the-sphinx-docstring-format)
-* [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
-* [NumPy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
+
+- [Sphinx](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html#the-sphinx-docstring-format)
+- [Google](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
+- [NumPy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)

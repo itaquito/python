@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📎 Tipos de variables"
+sidebar_label: '📎 Tipos de variables'
 sidebar_position: 1
 ---
 
@@ -11,6 +11,7 @@ sidebar_position: 1
 - **Cadena de texto (str):** Alude a valores y caracteres que son tratados como textos
 
 ## ✏️ Ejemplos
+
 Para darle un valor a una variable, hay que establecerla junto a su nombre e igualarla al dato que queremos que contenga. Cabe destacar que para nombrarla hay que seguir una convención como lo puede ser el CamelCase. Este estilo de escritura indica que el nombre de las variables debe de empezar con una minúscula, y de ahí cada palabra que contenga el nombre se escribirá sin espacio alguno y empezará con una mayúscula.
 
 :::tip Constantes

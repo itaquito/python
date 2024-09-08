@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🎨 Atributos y ⚙️ métodos"
+sidebar_label: '🎨 Atributos y ⚙️ métodos'
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ Los atributos de clase son aquellos que son genéricos para todos los objetos de
 
 ```python title="Ejemplo de una clase con un atributo de clase"
 class Gato:
-	
+
   # Atributo de clase
 	especie = "mamífero"
 ```
@@ -26,7 +26,7 @@ Los atributos de instancia son aquellos que se definen para cada objeto dentro d
 
 ```python title="Ejemplo de una clase con un atributo de instancia"
 class Gato:
-	
+
   # Atributos de instancia
   def __init__(self, raza, color):
     self.raza = raza
@@ -37,7 +37,7 @@ Ahora, debemos especificar los atributos de instancia a la hora de declarar una 
 
 ```python title="Ejemplo de cómo definir los atributos de instancia"
 class Gato:
-	
+
   # Atributos de instancia
   def __init__(self, raza, color):
     self.raza = raza
@@ -52,7 +52,7 @@ Cabe recalcar que los atributos de clases son accesibles desde la misma clase, p
 
 ```python title="Ejemplo de la obtención de un atributo de clase"
 class Gato:
-	
+
   # Atributo de clase
 	especie = "mamífero"
 
@@ -67,7 +67,7 @@ Un **método** es una función que desempeña una clase. Por ejemplo, una clase 
 
 ```python title="Ejemplo de una clase con un método"
 class Oso:
-	
+
   # Método comer()
   def comer(self):
 		print("El oso ha comido!")
@@ -75,14 +75,13 @@ class Oso:
 
 Con `self` podemos acceder a los atributos de instancia o clase desde un método:
 
-
 ```python title="Ejemplo de cómo acceder a un atributo desde un método"
 class Oso:
 
   # Método iniciador
   def __init__(self, nombre):
     self.nombre = nombre
-	
+
   # Método comer()
   def comer(self):
 		print(f"El oso, {nombre}, ha comido!")

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🚩 Funciones"
+sidebar_label: '🚩 Funciones'
 sidebar_position: 14
 ---
 
@@ -29,6 +29,7 @@ def sumar(a, b):
 suma = sumar(5, 10) # En este caso, esta función regresa un valor que guardamos en la variable suma.
 print(suma)
 ```
+
 ## Parámetros opcionales
 
 Ahora bien, hay funciones en donde es obligatorio ingresar argumentos. Esto se debe a que previamente en la definición de dicha función no se le asignó ningún valor a sus parámetros. Esto es visible en el ejemplo anterior. De igualarse alguno de los parámetros a un valor, no se requeriría ingresar necesariamente un argumento correspondiente a ese mismo parámetro al llamar a la función. Al definir una función, los parámetros que requieren obligatoriamente un valor a recibir se colocan antes que los demás parámetros.
@@ -72,7 +73,7 @@ print(sumarYRestar(c = 8, a = 10, b = 5)) # Aunque los valores esten en otro ord
 
 Se puede invocar a una función dentro de otra. Para ello bastará con llamar a esta función, junto con sus determinados argumentos, dentro de la función externa.
 
-```python title="Ejemplo de una función dentro de una función" 
+```python title="Ejemplo de una función dentro de una función"
 def funcion1(x, y):
 	w = funcion2(x, y) - 2
 	return w

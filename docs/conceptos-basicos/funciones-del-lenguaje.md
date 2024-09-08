@@ -1,11 +1,11 @@
 ---
-sidebar_label: "🛠️ Funciones del lenguaje"
+sidebar_label: '🛠️ Funciones del lenguaje'
 sidebar_position: 4
 ---
 
 # 🛠️ Funciones del lenguaje
 
-Python cuenta con diferentes funciones predeterminadas para realizar diferentes tareas.<
+Python cuenta con diferentes funciones predeterminadas para realizar diferentes tareas.
 
 ## print()
 

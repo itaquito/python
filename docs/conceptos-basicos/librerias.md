@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📚 Librerías"
+sidebar_label: '📚 Librerías'
 sidebar_position: 15
 ---
 

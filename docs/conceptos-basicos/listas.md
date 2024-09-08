@@ -1,5 +1,5 @@
 ---
-sidebar_label: "📋 Listas"
+sidebar_label: '📋 Listas'
 sidebar_position: 10
 ---
 

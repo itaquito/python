@@ -1,9 +1,9 @@
 ---
-sidebar_label: "🔑 Keywords"
+sidebar_label: '🔑 Keywords'
 sidebar_position: 2
 ---
 
-# 🔑 Keywords 
+# 🔑 Keywords
 
 Aquellas palabras reservadas del lenguaje, y las cuales no se deben de ocupar para nombrar variables. Como ejemplo tenemos “def” que se utiliza para crear funciones.
 

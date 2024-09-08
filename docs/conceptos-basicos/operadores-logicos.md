@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🤔 Operadores lógicos"
+sidebar_label: '🤔 Operadores lógicos'
 sidebar_position: 9
 ---
 
