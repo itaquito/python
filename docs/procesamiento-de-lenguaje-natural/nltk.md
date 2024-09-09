@@ -1,9 +1,9 @@
 ---
-sidebar_label: '🔑 NLTK'
+sidebar_label: '📚 NLTK'
 sidebar_position: 3
 ---
 
-# 🔑 NLTK
+# 📚 NLTK
 
 ## 🌟 Introducción
 
