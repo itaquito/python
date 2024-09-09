@@ -92,7 +92,7 @@ const config = {
             to: '/category/conceptos-avanzados',
           },
           {
-            label: 'Programación orientada a objetos',
+            label: 'POO',
             position: 'left',
             to: '/category/programacion-orientada-a-objetos',
           },
@@ -105,6 +105,11 @@ const config = {
             label: 'Procesamiento de imágenes',
             position: 'left',
             to: '/category/procesamiento-de-imagenes',
+          },
+          {
+            label: 'Procesamiento de Lenguaje Natural',
+            position: 'left',
+            to: '/category/procesamiento-de-lenguaje-natural',
           },
           {
             href: 'https://github.com/itaquito/python',
@@ -142,6 +147,11 @@ const config = {
               {
                 label: 'Procesamiento de imágenes',
                 to: '/category/procesamiento-de-imagenes',
+              },
+              {
+                label: 'Procesamiento de Lenguaje Natural',
+                position: 'left',
+                to: '/category/procesamiento-de-lenguaje-natural',
               },
             ],
           },
