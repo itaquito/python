@@ -3,15 +3,15 @@ sidebar_label: '🌎 Historia del PLN'
 sidebar_position: 2
 ---
 
-# 🌎 Historia del Procesamiento de Lenguaje Natural
+# 🌎 Historia del procesamiento de lenguaje natural
 
-## Primeras apariciones del Procesamiento de Lenguaje Natural
+## Primeras apariciones del procesamiento de lenguaje natural
 
 Uno de los primeros problemas que intentó solucionar en NLP fueron los sistemas capaces de traducir textos de un idioma a otro.
 
 Georgetown en 1964 fue uno de los primeros que utilizó un pequeño vocabulario junto a un conjunto de reglas simples para traducir frases del ruso al inglés.
 
-## Teoría de la Gramática Generativa
+## Teoría de la gramática generativa
 
 Esta teoría propuesta por Noam Chomsky introdujo la idea de una gramática universal subyacente a todos los idiomas humanos.
 

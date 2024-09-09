@@ -107,7 +107,7 @@ const config = {
             to: '/category/procesamiento-de-imagenes',
           },
           {
-            label: 'Procesamiento de Lenguaje Natural',
+            label: 'Procesamiento de lenguaje natural',
             position: 'left',
             to: '/category/procesamiento-de-lenguaje-natural',
           },
