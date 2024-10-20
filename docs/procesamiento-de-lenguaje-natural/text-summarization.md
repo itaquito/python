@@ -50,3 +50,24 @@ lang = "spanish" if "es" in html else "english"
 ```
 
 En este código, se obtiene el HTML de la página y se determina el idioma de la página utilizando el atributo lang del elemento `<html>`
+
+### 2. Limpieza del texto 🧹
+
+El siguiente paso es extraer los párrafos del HTML y limpiar el texto eliminando referencias, espacios adicionales y caracteres no alfabéticos.
+
+```python
+# Extraer los párrafos del HTML
+text = ""
+for paragraph in soup.find_all("p"):
+    text += paragraph.text + " "
+
+# Limpiar el texto
+import re
+
+text = re.sub(r"\[[0-9]*\]", " ", text) # Eliminar referencias
+text = re.sub(r"\s+", " ", text) # Eliminar espacios adicionales
+text = re.sub(r"[^a-zA-Z]", " ", text) # Eliminar caracteres no alfabéticos
+text = re.sub(r"\s+", " ", text) # Eliminar espacios adicionales
+```
+
+En este código, se extraen los párrafos del HTML y se limpia el texto utilizando expresiones regulares para eliminar referencias, espacios adicionales y caracteres no alfabéticos.
