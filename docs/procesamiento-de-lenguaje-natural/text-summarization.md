@@ -24,3 +24,7 @@ Beautiful Soup es una biblioteca de Python que facilita la extracción de inform
 lxml es una biblioteca de Python que permite el análisis y manipulación de documentos XML y HTML. Es muy rápido y eficiente, y proporciona una API muy fácil de usar.
 
 _Para la libreria NLTK, no es necesario hablar ya que hemos estado trabajando con ella durante el transcurso de este curso._
+
+## 📝 Implementación
+
+Para realizar el resumen de texto, primero necesitamos extraer el contenido de un artículo de una página web. Tenemos que asegurarnos que el texto que queremos analizar tenga la etiqueta `<p>` para poder extraerlo correctamente. Ya que si no esta cargado de esta manera será más complicado extraer el texto o no podremos extraerlo.
