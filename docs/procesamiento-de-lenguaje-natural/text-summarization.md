@@ -71,3 +71,17 @@ text = re.sub(r"\s+", " ", text) # Eliminar espacios adicionales
 ```
 
 En este código, se extraen los párrafos del HTML y se limpia el texto utilizando expresiones regulares para eliminar referencias, espacios adicionales y caracteres no alfabéticos.
+
+### 3. Tokenización y eliminación de stopwords 🛑
+
+Una vez que el texto está limpio, utilizamos NLTK para tokenizar las palabras y eliminar las palabras vacías (stopwords) que no aportan información importante. Este proceso ya lo hemos visto en secciones anteriores.
+
+    ```python
+    from nltk.corpus import stopwords
+
+    # Eliminar stopwords
+    stop_words = set(stopwords.words(lang))
+    words = nltk.word_tokenize(text)
+    sentences = nltk.sent_tokenize(text)
+    noStopWords = [word for word in words if word.lower() not in stop_words]
+    ```
