@@ -28,3 +28,25 @@ _Para la libreria NLTK, no es necesario hablar ya que hemos estado trabajando co
 ## 📝 Implementación
 
 Para realizar el resumen de texto, primero necesitamos extraer el contenido de un artículo de una página web. Tenemos que asegurarnos que el texto que queremos analizar tenga la etiqueta `<p>` para poder extraerlo correctamente. Ya que si no esta cargado de esta manera será más complicado extraer el texto o no podremos extraerlo.
+
+### 1. Extracción de contenido web 🕸
+
+El primer paso es descargar el contenido HTML de la página web que deseamos analizar. Utilizaremos urllib para obtener el HTML de la página y BeautifulSoup para procesarlo.
+
+```python
+
+import bs4 as bs
+import urllib.request
+
+# Descargar el contenido HTML de la página
+source = urllib.request.urlopen("{Nuestra pagina web con el texto que queremos sumarizar}").read()
+
+# Analizar el HTML con BeautifulSoup
+soup = bs.BeautifulSoup(source, "lxml")
+
+# Extraer el idioma de la página
+html = soup.find("html")["lang"]
+lang = "spanish" if "es" in html else "english"
+```
+
+En este código, se obtiene el HTML de la página y se determina el idioma de la página utilizando el atributo lang del elemento `<html>`
