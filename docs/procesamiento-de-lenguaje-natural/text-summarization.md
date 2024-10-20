@@ -145,3 +145,13 @@ Ahora, seleccionamos las N oraciones más relevantes, que representarán el resu
 summarySentences = [sentence for sentence, score in sortedSentences[:numberOfSentences]]
 
 ```
+
+### 6. Resultado final 🎉
+
+Finalmente, unimos las oraciones seleccionadas para formar el resumen final del texto original.
+
+```python
+# Unir las oraciones seleccionadas para crear el resumen
+summary = " ".join(summarySentences)
+print(summary)
+```
