@@ -108,3 +108,22 @@ numberOfSentences = 5
 El último paso consiste en calcular la relevancia de cada oración en función de las palabras que contiene. Utilizamos la frecuencia de las palabras como indicador de la importancia de las mismas. Las oraciones que contienen palabras con mayor frecuencia son las más relevantes para el resumen.
 
 Primero, inicializamos un diccionario para almacenar las puntuaciones de cada oración.
+
+```python
+# Inicializar diccionario para almacenar las puntuaciones de las oraciones
+sentenceScores = defaultdict(int)
+```
+
+A continuación, recorremos cada oración del texto original y analizamos cada palabra en la oración. Para cada palabra cuya frecuencia sea significativa, sumamos su frecuencia normalizada (frecuencia de la palabra dividida por la frecuencia máxima) a la puntuación de la oración.
+
+```python
+for sentence in sentences:
+    sentenceWords = nltk.word_tokenize(sentence.lower())
+    if len(sentenceWords) < 25:  # Filtrar oraciones muy cortas
+        continue
+    for word in sentenceWords:
+        if word in frequencies:
+            sentenceScores[sentence] += frequencies[word] / maxFrequency
+```
+
+En este código, se tokeniza cada oración y se calcula su puntuación solo si contiene más de 25 palabras (para evitar oraciones demasiado cortas que puedan no ser representativas).
