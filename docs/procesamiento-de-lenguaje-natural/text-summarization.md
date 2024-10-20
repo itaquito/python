@@ -85,3 +85,22 @@ Una vez que el texto está limpio, utilizamos NLTK para tokenizar las palabras y
     sentences = nltk.sent_tokenize(text)
     noStopWords = [word for word in words if word.lower() not in stop_words]
     ```
+
+### 4. Análisis de frecuencia de palabras 📊
+
+El siguiente paso es calcular la frecuencia de cada palabra en el texto. Calculamos la frecuencia de cada palabra en el texto utilizando nltk.FreqDist para determinar las palabras más comunes, que serán clave para puntuar las oraciones.
+
+```python
+
+frequencies = nltk.FreqDist(noStopWords)
+frequencies.most_common(10) # Mostrar las 10 palabras más comunes
+```
+
+Ahora que tenemos las palabras más comunes, podemos obtener la frequencia maxima que la usaremos para calcular la puntuación de las oraciones. Ademas podemos seleccionar el número de oraciones que queremos en nuestro resumen.
+
+```python
+maxFrequency = frequencies.most_common(1)[0][1]
+numberOfSentences = 5
+```
+
+### 5. Puntuación de las oraciones 🌟
