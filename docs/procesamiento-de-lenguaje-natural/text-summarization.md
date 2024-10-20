@@ -104,3 +104,7 @@ numberOfSentences = 5
 ```
 
 ### 5. Puntuación de las oraciones 🌟
+
+El último paso consiste en calcular la relevancia de cada oración en función de las palabras que contiene. Utilizamos la frecuencia de las palabras como indicador de la importancia de las mismas. Las oraciones que contienen palabras con mayor frecuencia son las más relevantes para el resumen.
+
+Primero, inicializamos un diccionario para almacenar las puntuaciones de cada oración.
