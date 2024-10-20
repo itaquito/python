@@ -127,3 +127,21 @@ for sentence in sentences:
 ```
 
 En este código, se tokeniza cada oración y se calcula su puntuación solo si contiene más de 25 palabras (para evitar oraciones demasiado cortas que puedan no ser representativas).
+
+Una vez que hemos puntuado todas las oraciones, ordenamos estas oraciones en función de su puntuación, de mayor a menor.
+
+```python
+# Ordenar las oraciones por puntuación
+sortedSentences = sorted(sentenceScores.items(), key=lambda item: item[1], reverse=True)
+```
+
+Esto asegura que las oraciones más relevantes (aquellas con mayor puntuación) aparezcan primero en la lista.
+
+Ahora, seleccionamos las N oraciones más relevantes, que representarán el resumen final del texto original.
+
+```python
+    # Seleccionar las N oraciones más relevantes
+
+summarySentences = [sentence for sentence, score in sortedSentences[:numberOfSentences]]
+
+```
