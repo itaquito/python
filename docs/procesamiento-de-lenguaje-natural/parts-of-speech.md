@@ -44,14 +44,14 @@ chunks = nltk.ne_chunk(tags) # Aquí es donde sucede la magia de nuestra fragmen
 
 La librería de NLTK nuevamente nos resulta útil, ya que cuenta con la función **'ne_chunk()'** que permite la asignación de entidades nombradas a las palabras correspondientes. Esta función recibe como argumento una lista que contenga a cada palabra del texto con su respectiva etiqueta. De ahí, nosotros recibimos una estructura de árbol donde se pueden observar las palabras del texto, junto con sus etiquetas y sus entidades.
 
-| Lista de entidades nombradas más comunes en ne_chunk|
-|------------------------------|
-|**1. Person:** nombres de personas|
-|**2. Organization:** nombres de organizaciones (empresas, instituciones, etc.)|
-|**3. GPE:** nombres de entidades geopolíticas (países, ciudades, etc.)|
-|**4. Location:** nombres de lugares NO geopolíticos (montañas, ríos, etc.)|
-|**5. Facility:** nombres de instalaciones (edificios, carreteras, etc.)|
-|**6. GSP:** nombres de entidades geográficas, sociales o políticas|
+| Lista de entidades nombradas más comunes en ne_chunk                           |
+| ------------------------------------------------------------------------------ |
+| **1. Person:** nombres de personas                                             |
+| **2. Organization:** nombres de organizaciones (empresas, instituciones, etc.) |
+| **3. GPE:** nombres de entidades geopolíticas (países, ciudades, etc.)         |
+| **4. Location:** nombres de lugares NO geopolíticos (montañas, ríos, etc.)     |
+| **5. Facility:** nombres de instalaciones (edificios, carreteras, etc.)        |
+| **6. GSP:** nombres de entidades geográficas, sociales o políticas             |
 
 ```python title="Impresión de la fragmentación"
 chunks.pretty_print()
