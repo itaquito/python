@@ -1,9 +1,9 @@
 ---
-sidebar_label: '🛑 Stop Words'
+sidebar_label: '🛑 Stop words'
 sidebar_position: 5
 ---
 
-# 🛑 Stop Words
+# 🛑 Stop words
 
 Las "stop words" son palabras que no aportan valor semántico relevante en el análisis de texto, por lo que se eliminan para mejorar la precisión de los algoritmos de procesamiento de lenguaje natural (PLN).
 
@@ -17,7 +17,7 @@ Estas Incluyen:
 - Verbos auxiliares: ser, estar, haber
 - Otros: que, como, por
 
-## 📚 ¿Cómo usar Stop Words en Python?
+## 📚 ¿Cómo usar stop words en Python?
 
 Para usar Stop Words en Python, necesitamos usar la libreria que ya hemos estado hablando, `nltk`.
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: '🗂️ Introducción de PLN'
+sidebar_label: '🗂️ Introducción del PLN'
 sidebar_position: 1
 ---
 
-# 🗂️ Introducción de Procesamiento de Lenguaje Natural (PLN)
+# 🗂️ Introducción del procesamiento de lenguaje natural (PLN)
 
 Se entiende como un subcampo del machine learning el cual le permite a los ordenadores tener la capacidad de interpretar, manipular y controlar el lenguaje humano.
 

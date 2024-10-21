@@ -1,5 +1,5 @@
 ---
-sidebar_label: "🔑 Tokenización"
+sidebar_label: '🔑 Tokenización'
 sidebar_position: 3
 ---
 
