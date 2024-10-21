@@ -11,7 +11,7 @@ El resumen automático de texto es una técnica de procesamiento del lenguaje na
 
 Para poder realizar el resumen de texto, necesitamos instalar las siguientes librerías:
 
-```bash
+```bash title="Instalación de librerías"
 pip install beautifulsoup4 lxml nltk
 ```
 
@@ -33,7 +33,7 @@ Para realizar el resumen de texto, primero necesitamos extraer el contenido de u
 
 El primer paso es descargar el contenido HTML de la página web que deseamos analizar. Utilizaremos urllib para obtener el HTML de la página y BeautifulSoup para procesarlo.
 
-```python
+```python title="Extracción de contenido web"
 
 import bs4 as bs
 import urllib.request
@@ -55,7 +55,7 @@ En este código, se obtiene el HTML de la página y se determina el idioma de la
 
 El siguiente paso es extraer los párrafos del HTML y limpiar el texto eliminando referencias, espacios adicionales y caracteres no alfabéticos.
 
-```python
+```python title="Limpieza del texto"
 # Extraer los párrafos del HTML
 text = ""
 for paragraph in soup.find_all("p"):
@@ -76,29 +76,28 @@ En este código, se extraen los párrafos del HTML y se limpia el texto utilizan
 
 Una vez que el texto está limpio, utilizamos NLTK para tokenizar las palabras y eliminar las palabras vacías (stopwords) que no aportan información importante. Este proceso ya lo hemos visto en secciones anteriores.
 
-    ```python
-    from nltk.corpus import stopwords
+```python title="Tokenización y eliminación de stopwords"
+from nltk.corpus import stopwords
 
-    # Eliminar stopwords
-    stop_words = set(stopwords.words(lang))
-    words = nltk.word_tokenize(text)
-    sentences = nltk.sent_tokenize(text)
-    noStopWords = [word for word in words if word.lower() not in stop_words]
-    ```
+# Eliminar stopwords
+stop_words = set(stopwords.words(lang))
+words = nltk.word_tokenize(text)
+sentences = nltk.sent_tokenize(text)
+noStopWords = [word for word in words if word.lower() not in stop_words]
+```
 
 ### 4. Análisis de frecuencia de palabras 📊
 
 El siguiente paso es calcular la frecuencia de cada palabra en el texto. Calculamos la frecuencia de cada palabra en el texto utilizando nltk.FreqDist para determinar las palabras más comunes, que serán clave para puntuar las oraciones.
 
-```python
-
+```python title="Análisis de frecuencia de palabras"
 frequencies = nltk.FreqDist(noStopWords)
 frequencies.most_common(10) # Mostrar las 10 palabras más comunes
 ```
 
 Ahora que tenemos las palabras más comunes, podemos obtener la frequencia maxima que la usaremos para calcular la puntuación de las oraciones. Ademas podemos seleccionar el número de oraciones que queremos en nuestro resumen.
 
-```python
+```python title="Frecuencia máxima y número de oraciones"
 maxFrequency = frequencies.most_common(1)[0][1]
 numberOfSentences = 5
 ```
@@ -109,14 +108,14 @@ El último paso consiste en calcular la relevancia de cada oración en función 
 
 Primero, inicializamos un diccionario para almacenar las puntuaciones de cada oración.
 
-```python
+```python title="Inicializar diccionario para almacenar las puntuaciones de las oraciones"
 # Inicializar diccionario para almacenar las puntuaciones de las oraciones
 sentenceScores = defaultdict(int)
 ```
 
 A continuación, recorremos cada oración del texto original y analizamos cada palabra en la oración. Para cada palabra cuya frecuencia sea significativa, sumamos su frecuencia normalizada (frecuencia de la palabra dividida por la frecuencia máxima) a la puntuación de la oración.
 
-```python
+```python title="Calcular la puntuación de las oraciones"
 for sentence in sentences:
     sentenceWords = nltk.word_tokenize(sentence.lower())
     if len(sentenceWords) < 25:  # Filtrar oraciones muy cortas
@@ -130,7 +129,7 @@ En este código, se tokeniza cada oración y se calcula su puntuación solo si c
 
 Una vez que hemos puntuado todas las oraciones, ordenamos estas oraciones en función de su puntuación, de mayor a menor.
 
-```python
+```python title="Ordenar las oraciones por puntuación"
 # Ordenar las oraciones por puntuación
 sortedSentences = sorted(sentenceScores.items(), key=lambda item: item[1], reverse=True)
 ```
@@ -140,17 +139,15 @@ Esto asegura que las oraciones más relevantes (aquellas con mayor puntuación) 
 Ahora, seleccionamos las N oraciones más relevantes, que representarán el resumen final del texto original.
 
 ```python
-    # Seleccionar las N oraciones más relevantes
-
+# Seleccionar las N oraciones más relevantes
 summarySentences = [sentence for sentence, score in sortedSentences[:numberOfSentences]]
-
 ```
 
 ### 6. Resultado final 🎉
 
 Finalmente, unimos las oraciones seleccionadas para formar el resumen final del texto original.
 
-```python
+```python title="Resultado final"
 # Unir las oraciones seleccionadas para crear el resumen
 summary = " ".join(summarySentences)
 print(summary)
