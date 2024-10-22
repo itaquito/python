@@ -38,7 +38,7 @@ El modelado de texto con Bag of Words implica:
 - Reúne el texto que deseas analizar.
 - Limpia el texto eliminando caracteres especiales, convirtiendo a minúsculas, etc.
 
-```python
+```python title="Preparación de texto"
 texto = '''El perro marron corre por el parque todos los dias. El perro juega con otros perros y siempre encuentra algo interesante en el parque. A veces, el perro se sienta bajo un árbol y observa a las personas que pasan por el parque.'''
 
 # Convertir el texto a minúsculas
@@ -60,7 +60,7 @@ texto = re.sub(r"\s+", " ", oracion)
 
 - Divide el texto en palabras individuales (tokens).
 
-```python
+```python title="Tokenización del texto"
 # Librería necesaria
 import nltk
 # Tokenizar la oración
@@ -69,7 +69,7 @@ palabras = nltk.word_tokenize(texto)
 
 ### Paso 3: Eliminar palabras vacías (stopwords)
 
-```python
+```python title="Eliminar palabras vacías"
 # Librería necesaria
 from nltk.corpus import stopwords
 
@@ -78,36 +78,33 @@ stop_words = stopwords.words("spanish")
 
 # Filtrar palabras vacías del texto
 palabras = [w for w in palabras if w not in stop_words]
-
 ```
 
 ### Paso 4: Construir el vocabulario
 
 - Crea una lista de todas las palabras únicas en el corpus.
 
-```python
+```python title="Construir el vocabulario"
 # Construir el vocabulario guardando una vez cada palabra restante
 vocabulario = set(palabras)
-
 ```
 
 ### Paso 5: Contar las frecuencias
 
 - Cuenta cuántas veces aparece cada palabra en cada documento.
 
-```python
+```python title="Crear las frecuencias"
 from collections import Counter
 
 # Obtener las frecuencias de las palabras
 frecuencias = dict(Counter(palabras))
-
 ```
 
 ### Paso 6: Crear el vector BoW
 
 - Representa cada documento como un vector de frecuencias de palabras.
 
-```python
+```python title="Crear el vector BoW"
 # Crear un diccionario para la matriz
 diccionario = {}
 
@@ -125,12 +122,11 @@ for oracion in oraciones:
         
         # Añadir 1 si la palabra está en la oración, 0 si no está
         diccionario[palabra].append(1 if palabra in oracion else 0)
-
 ```
 
 ### Extra: Visualizar en tabla
 
-```python
+```python title="Visualizar la matriz BoW"
 # Convertir el diccionario a un DataFrame
 matriz = pd.DataFrame(diccionario)
 print(matriz)
