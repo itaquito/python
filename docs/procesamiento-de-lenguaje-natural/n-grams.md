@@ -9,13 +9,13 @@ Los N-Gramas son conjuntos de datos que refieren a secuencias contiguas de 'n' p
 
 ## Bigrams
 
-Un Bigrama es una secuencia de 2 palabras adyacentes dado un texto. Derivado de la baja cantidad de elementos contiguos es que son más útiles para capturar relaciones cercanas entre palabras, y al hacerlo demandan menos recursos computacionales que otras secuencias.
+Un bigrama es una secuencia de 2 palabras adyacentes dado un texto. Derivado de la baja cantidad de elementos contiguos es que son más útiles para capturar relaciones cercanas entre palabras, y al hacerlo demandan menos recursos computacionales que otras secuencias.
 
 El preprocesamiento de datos, incluida la tokenización y la limpieza, es esencial para garantizar la implementación efectiva de dicha secuencia. Esto deriva del hecho de que buscamos mantener únicamente las palabras que tengan relevancia en la oración (en contraste a las palabras vacías) y que se encuentren en buen estado para poderse procesar correctamente. Frente a lo anterior, el bigrama se obtiene al declarar una lista. De ahí hay dos maneras de llenar dicha lista con los datos que necesitamos:
 1. Dentro de la lista **iterar sobre la posición de cada palabra del texto limpio** (a excepción de la última palabra), para así introducir como elemento una tupla o lista que almacene la palabra de una determinada posición y la palabra de la siguiente posición.
 2. Ocupar la **función bigrams de nltk** y convertir el resultado en una lista.
 
-```python title="Aplicación en Python"
+```python title="Ejemplo de cómo obtener bigramas"
 import nltk
 import re
 text_example = "Minecraft is the best videogame ever made..."
@@ -29,6 +29,7 @@ words_filt = [w for w in words if w not in nltk.corpus.stopwords.words("spanish"
 
 # PRIMER MÉTODO
 bigram = [(words_filt[w], words_filt[w + 1]) for w in range(len(words_filt) - 1)]
+
 # SEGUNDO MÉTODO
 bigram = list(nltk.bigrams(words_filt))
 ```
@@ -41,7 +42,7 @@ Al igual que los bigramas, existen dos métodos para obtener un trigrama.
 1. Dentro de una lista **iterar sobre la posición de cada palabra del texto limpio** (a excepción de las dos últimas), para así introducir como elemento una lista que contenga la palabra de una determinada posición y las palabras de las dos siguientes posiciones.
 2. Emplear la **función trigrams de nltk** y convertir el resultado en una lista.
 
-```python title="Aplicación en Python"
+```python title="Ejemplo de cómo obtener trigramas"
 import nltk
 import re
 text_example = "Minecraft is the best videogame ever made..."
@@ -51,6 +52,7 @@ text_example = "Minecraft is the best videogame ever made..."
 
 # PRIMER MÉTODO
 trigram = [(words_filt[w], words_filt[w + 1], words_filt[w + 2]) for w in range(len(words_filt) - 2)]
+
 # SEGUNDO MÉTODO
 trigram = list(nltk.trigrams(words_filt))
 ```
