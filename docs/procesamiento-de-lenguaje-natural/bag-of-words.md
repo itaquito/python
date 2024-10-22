@@ -1,5 +1,5 @@
 ---
-sidebar_label: '💰 Bag of Words'
+sidebar_label: '💰 Bag of words'
 sidebar_position: 7
 ---
 
