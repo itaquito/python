@@ -3,30 +3,15 @@ sidebar_label: '💰 Bag of Words'
 sidebar_position: 7
 ---
 
-# 💰 Modelo Bag of Words 
+# 💰 Modelo Bag of Words
 
-Es un método que se utiliza para representar documentos como un conjunto de palabras, ignorando el orden y la estructura, centrándose solo en la presencia de palabras.
+Es un método que se utiliza para representar documentos como un conjunto de palabras, ignorando el orden y la estructura, enfocandose solo en la presencia de palabras. Con él se obtiene un vector numérico que representa la frecuencia de términos en el documento, permitiendo analizar la similitud entre distintos textos, por ejemplo, la clasificación de correos como spam según el conteo de palabras relevantes.
 
 ## ⭐ Importancia del modelado de texto
 
 Es fundamental en el análisis de texto, ya que simplifica la complejidad al tratar el texto como una colección de palabras únicas, permitiendo la comparación y clasificación de documentos.
 
-## 📝 Detalles del proceso
-
-El modelado de texto con Bag of Words implica:
-
-- Tokenizar el texto.
-- Construir un vocabulario.
-- Representar el texto como un vector de frecuencias de palabras.
-- Aplicar técnicas de NLP y aprendizaje automático.
-
-## 🔧 Ejemplo práctico
-
-**Resultados esperados**: se obtiene un vector numérico que representa la presencia de términos en el documento, permitiendo analizar la similitud entre distintos textos.
-
-**Aplicación en la industria**: un ejemplo real sería la clasificación de correos electrónicos como spam o no spam mediante el conteo de palabras clave utilizando el modelo Bag of Words.
-
-## ✅ Ventajas del modelo Bag of Words
+## ✅ Ventajas
 
 - Permite una fácil implementación y comprensión.
 - Es eficiente para grandes conjuntos de datos textuales.
@@ -36,12 +21,17 @@ El modelado de texto con Bag of Words implica:
 - Permite identificar términos clave en un texto de manera sencilla.
 
 ## ❌ Limitaciones
-
 - Este modelo no considera el significado contextual de las palabras.
 - Puede haber problemas con palabras homónimas.
 - La dimensionalidad de los vectores puede afectar la eficacia en textos largos.
 
 ## ➡️ Pasos para construir el modelo BoW
+El modelado de texto con Bag of Words implica:
+
+- Tokenizar el texto.
+- Construir un vocabulario.
+- Representar el texto como un vector de frecuencias de palabras.
+- Aplicar técnicas de NLP y aprendizaje automático.
 
 ### Paso 1: Recopilar y preparar los datos
 
@@ -69,7 +59,6 @@ texto = re.sub(r"\s+", " ", oracion)
 ### Paso 2: Tokenización
 
 - Divide el texto en palabras individuales (tokens).
-- Elimina palabras vacías (stopwords).
 
 ```python
 # Librería necesaria
@@ -116,7 +105,7 @@ frecuencias = dict(Counter(palabras))
 
 ### Paso 6: Crear el vector BoW
 
-- Representa cada documento como un vector de frecuencias de palabras. 
+- Representa cada documento como un vector de frecuencias de palabras.
 
 ```python
 # Crear un diccionario para la matriz
