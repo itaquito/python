@@ -1,6 +1,6 @@
 ---
 sidebar_label: "📝 Text Summarization"
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 # 📝 Text Summarization

@@ -1,6 +1,6 @@
 ---
 sidebar_label: '⛓️ N-Grams'
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 # ⛓️ N-Grams
