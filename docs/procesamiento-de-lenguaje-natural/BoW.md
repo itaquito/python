@@ -21,7 +21,6 @@ Es fundamental en el análisis de texto, ya que simplifica la complejidad al tra
 - Permite identificar términos clave en un texto de manera sencilla.
 
 ## ❌ Limitaciones
-
 - Este modelo no considera el significado contextual de las palabras.
 - Puede haber problemas con palabras homónimas.
 - La dimensionalidad de los vectores puede afectar la eficacia en textos largos.
@@ -60,7 +59,6 @@ texto = re.sub(r"\s+", " ", oracion)
 ### Paso 2: Tokenización
 
 - Divide el texto en palabras individuales (tokens).
-- Elimina palabras vacías (stopwords).
 
 ```python
 # Librería necesaria
