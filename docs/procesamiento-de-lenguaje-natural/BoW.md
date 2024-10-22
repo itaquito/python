@@ -5,28 +5,13 @@ sidebar_position: 7
 
 # 💰 Modelo Bag of Words 
 
-Es un método que se utiliza para representar documentos como un conjunto de palabras, ignorando el orden y la estructura, centrándose solo en la presencia de palabras.
+Es un método que se utiliza para representar documentos como un conjunto de palabras, ignorando el orden y la estructura, enfocandose solo en la presencia de palabras. Con él se obtiene un vector numérico que representa la frecuencia de términos en el documento, permitiendo analizar la similitud entre distintos textos, por ejemplo, la clasificación de correos como spam según el conteo de palabras relevantes. 
 
 ## ⭐ Importancia del modelado de texto
 
 Es fundamental en el análisis de texto, ya que simplifica la complejidad al tratar el texto como una colección de palabras únicas, permitiendo la comparación y clasificación de documentos.
 
-## 📝 Detalles del proceso
-
-El modelado de texto con Bag of Words implica:
-
-- Tokenizar el texto.
-- Construir un vocabulario.
-- Representar el texto como un vector de frecuencias de palabras.
-- Aplicar técnicas de NLP y aprendizaje automático.
-
-## 🔧 Ejemplo práctico
-
-**Resultados esperados**: se obtiene un vector numérico que representa la presencia de términos en el documento, permitiendo analizar la similitud entre distintos textos.
-
-**Aplicación en la industria**: un ejemplo real sería la clasificación de correos electrónicos como spam o no spam mediante el conteo de palabras clave utilizando el modelo Bag of Words.
-
-## ✅ Ventajas del modelo Bag of Words
+## ✅ Ventajas
 
 - Permite una fácil implementación y comprensión.
 - Es eficiente para grandes conjuntos de datos textuales.
@@ -42,6 +27,12 @@ El modelado de texto con Bag of Words implica:
 - La dimensionalidad de los vectores puede afectar la eficacia en textos largos.
 
 ## ➡️ Pasos para construir el modelo BoW
+El modelado de texto con Bag of Words implica:
+
+- Tokenizar el texto.
+- Construir un vocabulario.
+- Representar el texto como un vector de frecuencias de palabras.
+- Aplicar técnicas de NLP y aprendizaje automático.
 
 ### Paso 1: Recopilar y preparar los datos
 
