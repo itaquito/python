@@ -11,15 +11,15 @@ El análisis de similitud de textos permite medir qué tan relacionados están d
 
 ## 🛠️ Métodos de Similitud
 
-### 1. **Modelos Lingüísticos con spaCy**
+### 🎨 Modelos Lingüísticos con spaCy
 
 Los modelos de lenguaje como spaCy calculan la similitud entre textos representándolos como vectores semánticos. Esto permite capturar no solo las palabras que comparten, sino también el contexto semántico de las mismas.
 
-#### ¿Cómo funciona?
+#### ❓ ¿Cómo funciona?
 
 SpaCy utiliza embeddings de palabras preentrenados para representar los textos como vectores en un espacio multidimensional. La similitud se calcula como el coseno del ángulo entre estos vectores.
 
-#### Ejemplo:
+#### ⭐ Ejemplo
 
 ```python
 import spacy
@@ -35,7 +35,7 @@ doc2 = nlp("Me gustan las naranjas")
 print("Similitud entre doc1 y doc2:", doc1.similarity(doc2))
 ```
 
-#### Análisis más detallado:
+#### 🔎 Análisis más detallado
 
 Puedes calcular similitudes entre diferentes porciones del texto:
 
@@ -56,16 +56,16 @@ print("Similitud entre primeras tres palabras:", manzana[:3].similarity(naranja[
 
 ---
 
-### 2. **Métodos Estadísticos: TF-IDF con Cosine Similarity**
+### 📐 Métodos Estadísticos: TF-IDF con Cosine Similarity
 
 El enfoque TF-IDF (Term Frequency-Inverse Document Frequency) mide qué tan importante es una palabra en un documento en relación con un conjunto de documentos. La similitud entre documentos se calcula con cosine similarity, que evalúa la similitud entre vectores TF-IDF.
 
-#### ¿Cómo funciona?
+#### ❓ ¿Cómo funciona?
 
 1. Se transforman los textos en vectores TF-IDF.
 2. Se calcula la similitud coseno entre estos vectores.
 
-#### Ejemplo:
+#### ⭐ Ejemplo
 
 ```python title="TF-IDF con Cosine Similarity"
 from sklearn.feature_extraction.text import TfidfVectorizer

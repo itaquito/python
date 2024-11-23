@@ -5,13 +5,13 @@ sidebar_position: 15
 
 # 📊 Text Classification
 
-## 🌟 Introducción
+## 🚩 Introducción
 
 La clasificación de texto es una tarea fundamental en el procesamiento del lenguaje natural, cuyo objetivo es asignar etiquetas o categorías predefinidas a fragmentos de texto.
 
 Este proceso permite transformar texto en categorías predefinidas, facilitando la organización, la automatización de tareas y la reducción de costos operativos. Además, impulsa la toma de decisiones informadas al identificar patrones, como el análisis de sentimientos en opiniones públicas, y mejora experiencias personalizadas en motores de búsqueda, chatbots y sistemas de recomendación.
 
-## 🌟 Ejemplo:
+## 🌟 Ejemplo
 
 En este ejemplo, veremos cómo implementar text classification desde cero en Python.
 
