@@ -1,13 +1,13 @@
 ---
 sidebar_label: '🛑 Stop words'
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # 🛑 Stop words
 
 Las "stop words" son palabras que no aportan valor semántico relevante en el análisis de texto, por lo que se eliminan para mejorar la precisión de los algoritmos de procesamiento de lenguaje natural (PLN).
 
-Estas Incluyen:
+Estas incluyen:
 
 - Artículos: el, la, los
 - Pronombres: yo, tú, él
