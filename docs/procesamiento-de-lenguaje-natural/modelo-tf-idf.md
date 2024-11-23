@@ -12,7 +12,7 @@ Es un método que ajusta la frecuencia de una palabra en un documento según cu�
 Conserva cierta información semántica al darle más peso a las palabras menos comunes.
 Ejemplo: en la frase "Ella es hermosa", la palabra "hermosa" tendrá más importancia que "Ella" o "es".
 
-## 🌟 Pasos para construir el modelo TF-IDF en Python:
+## 🔎 Pasos para construir el modelo TF-IDF en Python:
 
 1. Cargar e importar las librerías necesarias.
 2. Preprocesar los datos (tokenizar, eliminar stopwords, convertir a minúsculas).
@@ -22,7 +22,7 @@ Ejemplo: en la frase "Ella es hermosa", la palabra "hermosa" tendrá más import
 6. (Opcional) Normalizar los valores de TF-IDF.
 7. Almacenar y utilizar el modelo para aplicaciones como búsqueda o análisis de sentimiento.
 
-## 🌟 Ejemplo:
+## 🖊️ Ejemplo
 
 En este ejemplo, veremos cómo implementar el cálculo de TF-IDF (Frecuencia de Términos) desde cero en Python, utilizando un conjunto de oraciones simples.
 
@@ -39,18 +39,34 @@ sentences=[
     "El perro come carne.",
     "El gato y el perro son amigos.",
 ]
-stop_words=set(stopwords.words('spanish'))
-sentences_filtered=[]
+
+# Tokenización y eliminación de stopwords
+stop_words = set(stopwords.words('spanish'))
+sentences_filtered = []
+
 for sentence in sentences:
-    sentence=re.sub(r"\W"," ",sentence)
-    sentence=re.sub(r"\s+"," ",sentence)
-    words=nltk.word_tokenize(sentence)
-    words=[word for word in words if word.lower() not in stop_words]
+    # Convertir a minúsculas, eliminar caracteres no alfabéticos y espacios adicionales    
+    sentence = re.sub(r"\W"," ",sentence)
+    sentence = re.sub(r"\s+"," ",sentence)
+    
+    # Tokenizar la oración
+    words = nltk.word_tokenize(sentence)
+    
+    # Eliminar stopwords
+    words = [word for word in words if word.lower() not in stop_words]
+    
+    # Agregar la oración preprocesada a la lista
     sentences_filtered.append(" ".join(words))
-terminos=[]
+
+# Obtener los términos únicos
+terminos = []
+
 for words in sentences_filtered:
         terminos.extend(words.split())
+
+# Eliminar duplicados
 terminos=set(terminos)
+
 print(terminos)
 ```
 

@@ -107,7 +107,7 @@ const config = {
             to: '/category/procesamiento-de-imagenes',
           },
           {
-            label: 'Procesamiento de Lenguaje Natural',
+            label: 'Procesamiento de lenguaje natural',
             position: 'left',
             to: '/category/procesamiento-de-lenguaje-natural',
           },
@@ -149,7 +149,7 @@ const config = {
                 to: '/category/procesamiento-de-imagenes',
               },
               {
-                label: 'Procesamiento de Lenguaje Natural',
+                label: 'Procesamiento de lenguaje natural',
                 position: 'left',
                 to: '/category/procesamiento-de-lenguaje-natural',
               },
@@ -177,6 +177,10 @@ const config = {
               {
                 label: 'Página oficial de NumPy',
                 href: 'https://numpy.org/',
+              },
+              {
+                label: 'Página oficial de Natural Language Toolkit',
+                href: 'https://www.nltk.org/',
               },
             ],
           },

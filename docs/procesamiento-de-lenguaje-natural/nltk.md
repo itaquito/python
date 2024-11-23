@@ -1,9 +1,9 @@
 ---
-sidebar_label: '📚 NLTK'
+sidebar_label: '📚 Natural Language Toolkit (NLTK)'
 sidebar_position: 3
 ---
 
-# 📚 NLTK
+# 📚 Natural Language Toolkit (NLTK)
 
 ## 🌟 Introducción
 

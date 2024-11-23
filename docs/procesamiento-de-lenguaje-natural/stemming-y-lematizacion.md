@@ -1,11 +1,11 @@
 ---
-sidebar_label: '🌱 Stemming y Lematización'
-sidebar_position: 4
+sidebar_label: '🌱 Stemming y lematización'
+sidebar_position: 5
 ---
 
-# 🌱 Stemming y Lematización
+# 🌱 Stemming y lematización
 
-En el ámbito del Procesamiento del Lenguaje Natural (PLN), dos métodos comunes para la normalización de textos que transforman datos de texto sin procesar en un formato legible para su procesamiento automático son el stemming y la lematización. Ambos métodos eliminan los afijos de las palabras flexionadas, dejando solo la raíz. Estos procesos eliminan caracteres al inicio y al final de las palabras. Las raíces resultantes, o palabras base, se utilizan para el procesamiento posterior. Aunque comparten esta similitud, la lematización y el stemming difieren en cómo simplifican las palabras a una forma base común.
+En el ámbito del procesamiento del lenguaje natural (PLN), dos métodos comunes para la normalización de textos que transforman datos de texto sin procesar en un formato legible para su procesamiento automático son el stemming y la lematización. Ambos métodos eliminan los afijos de las palabras flexionadas, dejando solo la raíz. Estos procesos eliminan caracteres al inicio y al final de las palabras. Las raíces resultantes, o palabras base, se utilizan para el procesamiento posterior. Aunque comparten esta similitud, la lematización y el stemming difieren en cómo simplifican las palabras a una forma base común.
 
 ## 🌿 Stemming
 
