@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔎 Modelo TF-IDF"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # 🔎 Modelo TF-IDF

@@ -1,9 +1,9 @@
 ---
-sidebar_label: "📊 Text Clasification"
-sidebar_position: 10
+sidebar_label: "📊 Text Classification"
+sidebar_position: 15
 ---
 
-# 📊 Text Clasification
+# 📊 Text Classification
 
 ## 🌟 Introducción
 
@@ -13,7 +13,7 @@ Este proceso permite transformar texto en categorías predefinidas, facilitando 
 
 ## 🌟 Ejemplo:
 
-En este ejemplo, veremos cómo implementar text clasification desde cero en Python.
+En este ejemplo, veremos cómo implementar text classification desde cero en Python.
 
 ```python title="Importación de librerías"
 import pandas as pd

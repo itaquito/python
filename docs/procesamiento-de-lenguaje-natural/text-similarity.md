@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔍 Similitud de Textos"
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 # 🔍 Similitud de Textos

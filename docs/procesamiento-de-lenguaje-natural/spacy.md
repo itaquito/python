@@ -1,6 +1,6 @@
 ---
 sidebar_label: '🤖 Spacy'
-sidebar_position: 8
+sidebar_position: 16
 ---
 
 # 🤖 Spacy
