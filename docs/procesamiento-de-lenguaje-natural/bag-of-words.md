@@ -21,11 +21,13 @@ Es fundamental en el análisis de texto, ya que simplifica la complejidad al tra
 - Permite identificar términos clave en un texto de manera sencilla.
 
 ## ❌ Limitaciones
+
 - Este modelo no considera el significado contextual de las palabras.
 - Puede haber problemas con palabras homónimas.
 - La dimensionalidad de los vectores puede afectar la eficacia en textos largos.
 
 ## ➡️ Pasos para construir el modelo BoW
+
 El modelado de texto con Bag of Words implica:
 
 - Tokenizar el texto.
@@ -119,7 +121,7 @@ for oracion in oraciones:
     for palabra in frecuencias.keys():
         if palabra not in diccionario:
             diccionario[palabra] = []
-        
+
         # Añadir 1 si la palabra está en la oración, 0 si no está
         diccionario[palabra].append(1 if palabra in oracion else 0)
 ```
@@ -131,8 +133,9 @@ for oracion in oraciones:
 matriz = pd.DataFrame(diccionario)
 print(matriz)
 ```
-| Oración | perro | parque | marron | corre | días | juega | encuentra | interesante | veces | árbol |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| el perro marron corre por el parque todos los dias. | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
-| el perro juega con otros perros y siempre encuentra algo interesante en el parque. | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
-| a veces el perro se sienta bajo un árbol y observa a las personas que pasan por el parque. | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+
+| Oración                                                                                    | perro | parque | marron | corre | días | juega | encuentra | interesante | veces | árbol |
+| ------------------------------------------------------------------------------------------ | ----- | ------ | ------ | ----- | ---- | ----- | --------- | ----------- | ----- | ----- |
+| el perro marron corre por el parque todos los dias.                                        | 1     | 1      | 1      | 1     | 1    | 0     | 0         | 0           | 0     | 0     |
+| el perro juega con otros perros y siempre encuentra algo interesante en el parque.         | 1     | 1      | 0      | 0     | 0    | 1     | 1         | 1           | 0     | 0     |
+| a veces el perro se sienta bajo un árbol y observa a las personas que pasan por el parque. | 1     | 1      | 0      | 0     | 0    | 0     | 0         | 0           | 1     | 1     |

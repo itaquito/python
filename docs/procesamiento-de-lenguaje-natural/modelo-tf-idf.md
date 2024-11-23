@@ -1,6 +1,6 @@
 ---
 sidebar_label: "🔎 Modelo TF-IDF"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # 🔎 Modelo TF-IDF
@@ -15,7 +15,7 @@ Ejemplo: en la frase "Ella es hermosa", la palabra "hermosa" tendrá más import
 ## 🔎 Pasos para construir el modelo TF-IDF en Python:
 
 1. Cargar e importar las librerías necesarias.
-2. Preprocesar los datos (tokenizar, eliminar stopwords, convertir a minúsculas).
+2. Preprocesar los datos (tokenizar, eliminar stop words, convertir a minúsculas).
 3. Calcular la frecuencia de términos (TF).
 4. Calcular la frecuencia inversa de documentos (IDF).
 5. Combinar TF e IDF para obtener la importancia de cada palabra.
