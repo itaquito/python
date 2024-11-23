@@ -39,7 +39,7 @@ print("Similitud entre doc1 y doc2:", doc1.similarity(doc2))
 
 Puedes calcular similitudes entre diferentes porciones del texto:
 
-```python
+```python title="Similitud entre secciones específicas"
 # División del texto en tokens
 manzana = nlp(doc1)
 naranja = nlp(doc2)
@@ -67,7 +67,7 @@ El enfoque TF-IDF (Term Frequency-Inverse Document Frequency) mide qué tan impo
 
 #### Ejemplo:
 
-```python
+```python title="TF-IDF con Cosine Similarity"
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
